@@ -1,0 +1,11 @@
+/home/hengrith/Desktop/os-se-p20240034/os-lab-p20240034/lab1/task2_files
+a.txt
+a.txt
+b.txt
+This is file A
+This is file B
+a_copy.txt
+a.txt
+b.txt
+a.txt
+b.txt
