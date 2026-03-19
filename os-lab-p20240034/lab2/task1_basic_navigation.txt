@@ -1,0 +1,58 @@
+/home/hengrith
+total 108
+drwxr-x--- 20 hengrith hengrith 4096 Mar 19 10:43 .
+drwxr-xr-x  3 root     root     4096 Mar 12 12:25 ..
+-rw-------  1 hengrith hengrith 8269 Mar 19 17:06 .bash_history
+-rw-r--r--  1 hengrith hengrith  220 Mar 31  2024 .bash_logout
+-rw-r--r--  1 hengrith hengrith 3771 Mar 31  2024 .bashrc
+drwx------ 14 hengrith hengrith 4096 Mar 19 10:33 .cache
+drwxr-xr-x 16 hengrith hengrith 4096 Mar 19 07:57 .config
+drwx------  3 hengrith hengrith 4096 Mar 19 07:56 .copilot
+drwxr-xr-x  2 hengrith hengrith 4096 Mar 17 14:21 Desktop
+drwxr-xr-x  2 hengrith hengrith 4096 Mar 17 14:25 Documents
+drwxrwxr-x  3 hengrith hengrith 4096 Mar 19 10:43 .dotnet
+drwxr-xr-x  2 hengrith hengrith 4096 Mar 19 10:20 Downloads
+-rw-rw-r--  1 hengrith hengrith   52 Mar 12 16:00 .gitconfig
+drwx------  4 hengrith hengrith 4096 Mar 12 12:34 .local
+drwxr-xr-x  2 hengrith hengrith 4096 Mar 12 12:34 Music
+drwxrwxr-x  6 hengrith hengrith 4096 Mar 19 16:58 os-se-p20240034
+drwxr-xr-x  3 hengrith hengrith 4096 Mar 12 15:57 Pictures
+drwx------  3 hengrith hengrith 4096 Mar 19 07:55 .pki
+-rw-r--r--  1 hengrith hengrith  807 Mar 31  2024 .profile
+drwxr-xr-x  2 hengrith hengrith 4096 Mar 12 12:34 Public
+drwx------  6 hengrith hengrith 4096 Mar 19 07:48 snap
+drwx------  2 hengrith hengrith 4096 Mar 17 13:21 .ssh
+-rw-r--r--  1 hengrith hengrith    0 Mar 12 15:10 .sudo_as_admin_successful
+drwxr-xr-x  2 hengrith hengrith 4096 Mar 12 12:34 Templates
+drwxr-xr-x  2 hengrith hengrith 4096 Mar 12 12:34 Videos
+drwxrwxr-x  4 hengrith hengrith 4096 Mar 19 07:55 .vscode
+--- Root directory (/) ---
+/
+bin
+bin.usr-is-merged
+boot
+cdrom
+dev
+etc
+home
+lib
+lib64
+lib.usr-is-merged
+lost+found
+media
+mnt
+opt
+proc
+root
+run
+sbin
+sbin.usr-is-merged
+snap
+srv
+swap.img
+sys
+tmp
+usr
+var
+--- Back to home ---
+/home/hengrith
