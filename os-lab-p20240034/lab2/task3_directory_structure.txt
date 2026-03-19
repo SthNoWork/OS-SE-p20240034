@@ -1,0 +1,31 @@
+techcorp
+├── engineering
+│   ├── backend
+│   │   ├── app.js
+│   │   ├── database.sql
+│   │   └── server_config.txt
+│   ├── devops
+│   │   ├── docker-compose.yml
+│   │   ├── Dockerfile
+│   │   └── pipeline.txt
+│   └── frontend
+│       ├── app_config.txt
+│       ├── index.html
+│       └── styles.css
+├── hr
+│   ├── onboarding
+│   │   ├── checklist.txt
+│   │   └── welcome_guide.txt
+│   └── policies
+│       ├── leave_policy.txt
+│       └── remote_work.txt
+└── marketing
+    ├── assets
+    │   ├── banner.jpg
+    │   ├── brochure.pdf
+    │   └── logo.png
+    └── campaigns
+        ├── q1_launch.txt
+        └── social_media.txt
+
+11 directories, 18 files
