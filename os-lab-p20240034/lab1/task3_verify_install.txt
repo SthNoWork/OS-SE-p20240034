@@ -1,2 +1,0 @@
-/usr/bin/mc
-drwxr-xr-x 2 root root 4096 Mar 12 16:23 /etc/mc

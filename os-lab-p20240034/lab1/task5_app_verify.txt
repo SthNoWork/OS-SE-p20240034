@@ -1,2 +1,0 @@
-/usr/bin/htop
-/usr/bin/tmux
