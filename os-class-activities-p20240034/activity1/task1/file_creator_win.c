@@ -6,23 +6,23 @@
 #include <string.h>
 
 int main() {
-    const char *text = "Hello from Operating Systems class!\n";
-    const char *confirm = "File created successfully!\n";
+    const char* text = "Hello from Operating Systems class!\n";
+    const char* confirm = "File created successfully!\n";
     DWORD bytesWritten;
 
     // Create/open the file
     HANDLE hFile = CreateFile(
-        "output.txt",           // filename
-        GENERIC_WRITE,          // access mode
-        0,                      // no sharing
-        NULL,                   // default security
-        CREATE_ALWAYS,          // always create new (overwrite if exists)
-        FILE_ATTRIBUTE_NORMAL,  // normal file
-        NULL                    // no template
+        "output.txt",          // filename
+        GENERIC_WRITE,         // access mode
+        0,                     // no sharing
+        NULL,                  // default security
+        CREATE_ALWAYS,         // always create new (overwrite if exists)
+        FILE_ATTRIBUTE_NORMAL, // normal file
+        NULL                   // no template
     );
 
     if (hFile == INVALID_HANDLE_VALUE) {
-        const char *err = "Error creating file\n";
+        const char* err = "Error creating file\n";
         WriteFile(GetStdHandle(STD_ERROR_HANDLE), err, strlen(err), &bytesWritten, NULL);
         return 1;
     }

@@ -1,42 +1,40 @@
+/* file_reader_sys.c */
 #include <fcntl.h>
-#include <stdio.h>
-#include <stdlib.h>
 #include <unistd.h>
+#include <stdio.h>
 
-int main(int argc, char *argv[]) {
-    const char *filename = (argc > 1) ? argv[1] : "created_by_syscall.txt";
+int main() {
     char buffer[256];
-
-    int fd = open(filename, O_RDONLY);
+    ssize_t bytesRead;
+    int fd = open("output.txt", O_RDONLY);
     if (fd == -1) {
-        perror("open");
-        return EXIT_FAILURE;
+        perror("Failed to open file");
+        return 1;
     }
 
-    ssize_t nread;
-    while ((nread = read(fd, buffer, sizeof(buffer))) > 0) {
-        ssize_t total_written = 0;
-        while (total_written < nread) {
-            ssize_t nwritten = write(STDOUT_FILENO, buffer + total_written, (size_t)(nread - total_written));
-            if (nwritten == -1) {
-                perror("write");
+    while ((bytesRead = read(fd, buffer, sizeof(buffer))) > 0) {
+        ssize_t totalWritten = 0;
+        while (totalWritten < bytesRead) {
+            ssize_t bytesWritten = write(1, buffer + totalWritten, bytesRead - totalWritten);
+            if (bytesWritten < 0) {
+                perror("Error writing to stdout");
                 close(fd);
-                return EXIT_FAILURE;
+                return 1;
             }
-            total_written += nwritten;
+            totalWritten += bytesWritten;
         }
     }
 
-    if (nread == -1) {
-        perror("read");
+    if (bytesRead < 0) {
+        perror("Error reading file");
         close(fd);
-        return EXIT_FAILURE;
+        return 1;
     }
 
-    if (close(fd) == -1) {
-        perror("close");
-        return EXIT_FAILURE;
+    if (close(fd) < 0) {
+        perror("Error closing file");
+        return 1;
     }
 
-    return EXIT_SUCCESS;
+    return 0;
 }
