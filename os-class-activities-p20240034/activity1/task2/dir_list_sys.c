@@ -1,51 +1,36 @@
-#define _GNU_SOURCE
-#include <dirent.h>
-#include <errno.h>
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
-#include <sys/syscall.h>
+/* dir_list_sys.c */
 #include <unistd.h>
+#include <dirent.h>
+#include <sys/stat.h>
+#include <string.h>
+#include <stdio.h> // only for snprintf to format numbers into strings
 
-struct linux_dirent64 {
-    ino64_t d_ino;
-    off64_t d_off;
-    unsigned short d_reclen;
-    unsigned char d_type;
-    char d_name[];
-};
-
-int main(int argc, char *argv[]) {
-    const char *path = (argc > 1) ? argv[1] : ".";
-    int fd = syscall(SYS_openat, AT_FDCWD, path, O_RDONLY | O_DIRECTORY, 0);
-    if (fd == -1) {
-        perror("openat");
-        return EXIT_FAILURE;
+int main() {
+    char buffer[512];
+    DIR* dir = opendir(".");
+    if (dir == NULL) {
+        const char* err = "Error opening directory\n";
+        write(2, err, strlen(err));
+        return 1;
     }
 
-    char buffer[4096];
-    for (;;) {
-        int nread = syscall(SYS_getdents64, fd, buffer, sizeof(buffer));
-        if (nread == -1) {
-            perror("getdents64");
-            close(fd);
-            return EXIT_FAILURE;
-        }
-        if (nread == 0) {
-            break;
+    const char* header = "Name\t\tSize (bytes)\n";
+    write(1, header, strlen(header));
+
+    struct dirent* entry;
+    while ((entry = readdir(dir)) != NULL) {
+        struct stat st;
+        if (stat(entry->d_name, &st) == -1) {
+            continue;
         }
 
-        for (int bpos = 0; bpos < nread;) {
-            struct linux_dirent64 *d = (struct linux_dirent64 *)(buffer + bpos);
-            printf("%s\n", d->d_name);
-            bpos += d->d_reclen;
+        int len = snprintf(buffer, sizeof(buffer), "%-16s %ld\n", entry->d_name, (long)st.st_size);
+        if (len > 0) {
+            write(1, buffer, (size_t)len);
         }
     }
 
-    if (close(fd) == -1) {
-        perror("close");
-        return EXIT_FAILURE;
-    }
+    closedir(dir);
 
-    return EXIT_SUCCESS;
+    return 0;
 }
