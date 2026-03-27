@@ -1,0 +1,52 @@
+
+--- Challenge Investigation ---
+total 4
+-rw-rw-r-- 1 hengrith hengrith  0 Mar 19 17:10 checklist.txt
+-rw-rw-r-- 1 hengrith hengrith 52 Mar 19 17:10 welcome_guide.txt
+techcorp/marketing/:
+total 8.0K
+drwxrwxr-x 2 hengrith hengrith 4.0K Mar 19 17:10 assets
+drwxrwxr-x 2 hengrith hengrith 4.0K Mar 27 13:54 campaigns
+
+techcorp/marketing/assets:
+total 0
+-rw-rw-r-- 1 hengrith hengrith 0 Mar 19 17:10 banner.jpg
+-rw-rw-r-- 1 hengrith hengrith 0 Mar 19 17:10 brochure.pdf
+-rw-rw-r-- 1 hengrith hengrith 0 Mar 19 17:10 logo.png
+
+techcorp/marketing/campaigns:
+total 8.0K
+-rw-rw-r-- 1 hengrith hengrith 32 Mar 19 17:10 q1_launch.txt
+-rw-rw-r-- 1 hengrith hengrith 35 Mar 19 17:10 social_media.txt
+total 8
+-rw-rw-r-- 1 hengrith hengrith  0 Mar 19 17:10 Dockerfile
+-rw-rw-r-- 1 hengrith hengrith  0 Mar 19 17:10 docker-compose.yml
+-rw-rw-r-- 1 hengrith hengrith 29 Mar 19 17:10 pipeline.txt
+-rw-rw-r-- 1 hengrith hengrith 34 Mar 27 13:54 security_audit.txt
+total 120K
+-rw-------  1 hengrith hengrith  17K Mar 27 13:55 .bash_history
+drwxr-x--- 20 hengrith hengrith 4.0K Mar 19 10:43 .
+drwxr-xr-x  3 root     root     4.0K Mar 12 12:25 ..
+drwx------ 14 hengrith hengrith 4.0K Mar 19 10:33 .cache
+drwxr-xr-x 17 hengrith hengrith 4.0K Mar 26 17:10 .config
+drwx------  3 hengrith hengrith 4.0K Mar 19 07:56 .copilot
+drwxr-xr-x  2 hengrith hengrith 4.0K Mar 26 16:36 Desktop
+drwxr-xr-x  2 hengrith hengrith 4.0K Mar 17 14:25 Documents
+drwxrwxr-x  3 hengrith hengrith 4.0K Mar 19 10:43 .dotnet
+drwxr-xr-x  2 hengrith hengrith 4.0K Mar 19 10:20 Downloads
+drwx------  4 hengrith hengrith 4.0K Mar 12 12:34 .local
+drwxr-xr-x  2 hengrith hengrith 4.0K Mar 12 12:34 Music
+drwxrwxr-x  6 hengrith hengrith 4.0K Mar 26 15:23 os-se-p20240034
+drwxr-xr-x  3 hengrith hengrith 4.0K Mar 12 15:57 Pictures
+drwx------  3 hengrith hengrith 4.0K Mar 19 07:55 .pki
+drwxr-xr-x  2 hengrith hengrith 4.0K Mar 12 12:34 Public
+drwx------  6 hengrith hengrith 4.0K Mar 19 07:48 snap
+drwx------  2 hengrith hengrith 4.0K Mar 26 17:08 .ssh
+drwxr-xr-x  2 hengrith hengrith 4.0K Mar 12 12:34 Templates
+drwxr-xr-x  2 hengrith hengrith 4.0K Mar 12 12:34 Videos
+drwxrwxr-x  4 hengrith hengrith 4.0K Mar 19 07:55 .vscode
+-rw-r--r--  1 hengrith hengrith 3.7K Mar 31  2024 .bashrc
+-rw-r--r--  1 hengrith hengrith  807 Mar 31  2024 .profile
+-rw-r--r--  1 hengrith hengrith  220 Mar 31  2024 .bash_logout
+-rw-rw-r--  1 hengrith hengrith   52 Mar 12 16:00 .gitconfig
+-rw-r--r--  1 hengrith hengrith    0 Mar 12 15:10 .sudo_as_admin_successful
