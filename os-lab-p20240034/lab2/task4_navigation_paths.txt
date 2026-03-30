@@ -21,4 +21,10 @@ styles.css
 q1_launch.txt
 social_media.txt
 --- cd - (back to previous directory) ---
-/home/hengrith/os-se-p20240034/os-lab-p20240034/lab2/techcorp
+/home/hengrith/os-se-p20240034/os-lab-p20240034/lab2/techcorp--- Challenge Navigation ---
+/home/hengrith/os-se-p20240034/os-lab-p20240034/lab2/techcorp/engineering/backend
+/usr/bin
+/home/hengrith/os-se-p20240034/os-lab-p20240034/lab2/techcorp/engineering/backend
+/home/hengrith/os-se-p20240034/os-lab-p20240034/lab2/techcorp/hr/onboarding
+checklist.txt
+welcome_guide.txt

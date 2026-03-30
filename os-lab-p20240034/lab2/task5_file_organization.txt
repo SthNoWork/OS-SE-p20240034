@@ -1,0 +1,48 @@
+--- Challenge File Organization ---
+docker-compose.yml
+Dockerfile
+pipeline.txt
+security_audit.txt
+app.js
+database.sql
+pipeline_backup.txt
+server_config.txt
+q1_launch.txt
+social_media.txt
+frontend_config.txt
+index.html
+styles.css
+--- Final Challenge Structure ---
+techcorp
+├── engineering
+│   ├── backend
+│   │   ├── app.js
+│   │   ├── database.sql
+│   │   ├── pipeline_backup.txt
+│   │   └── server_config.txt
+│   ├── devops
+│   │   ├── docker-compose.yml
+│   │   ├── Dockerfile
+│   │   ├── pipeline.txt
+│   │   └── security_audit.txt
+│   └── frontend
+│       ├── frontend_config.txt
+│       ├── index.html
+│       └── styles.css
+├── hr
+│   ├── onboarding
+│   │   ├── checklist.txt
+│   │   └── welcome_guide.txt
+│   └── policies
+│       ├── leave_policy.txt
+│       └── remote_work.txt
+└── marketing
+    ├── assets
+    │   ├── banner.jpg
+    │   ├── brochure.pdf
+    │   └── logo.png
+    └── campaigns
+        ├── q1_launch.txt
+        └── social_media.txt
+
+11 directories, 20 files
