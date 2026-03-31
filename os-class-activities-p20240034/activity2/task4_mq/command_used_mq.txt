@@ -1,0 +1,20 @@
+  525  nano /home/hengrith/os-se-p20240034/os-class-activities-p20240034/activity2/task4_mq/common.h
+  526  nano /home/hengrith/os-se-p20240034/os-class-activities-p20240034/activity2/task4_mq/sender.c
+  527  nano /home/hengrith/os-se-p20240034/os-class-activities-p20240034/activity2/task4_mq/receiver.c
+  528  cd /home/hengrith/os-se-p20240034/os-class-activities-p20240034/activity2/task4_mq
+  529  clear
+  530  gcc -o sender sender.c -lrt
+  531  gcc -o receiver receiver.c -lrt
+  532  ./sender
+  533  ./receiver > result-mq-ipc.txt
+  534  cat result-mq-ipc.txt
+  535  clear
+  536  image
+  537  history | tail -n 20 > /home/hengrith/os-se-p20240034/os-class-activities-p20240034/activity2/task4_mq/command_used_mq.txt
+  538  cd /home/hengrith/os-se-p20240034/os-class-activities-p20240034/activity2
+  539  for d in screenshots task1 task2 task3_shm task4_mq; do     [ -d "$d" ] || echo "Missing dir: $d"; done
+  540  for f in task1/forkchild.c task1/result_forkchild.txt task1/command_used_forkchild.txt     task2/winprocess.c task3_shm/shm-producer.c task3_shm/shm-consumer.c     task3_shm/result-shm-ipc.txt task3_shm/command_used_shm.txt     task4_mq/common.h task4_mq/sender.c task4_mq/receiver.c     task4_mq/result-mq-ipc.txt task4_mq/command_used_mq.txt; do     [ -f "$f" ] || echo "Missing file: $f"; done
+  541  cd /home/hengrith/os-se-p20240034/os-class-activities-p20240034/activity2
+  542  for d in screenshots task1 task2 task3_shm task4_mq; do     [ -d "$d" ] || echo "Missing dir: $d"; done
+  543  for f in task1/forkchild.c task1/result_forkchild.txt task1/command_used_forkchild.txt     task2/winprocess.c task3_shm/shm-producer.c task3_shm/shm-consumer.c     task3_shm/result-shm-ipc.txt task3_shm/command_used_shm.txt     task4_mq/common.h task4_mq/sender.c task4_mq/receiver.c     task4_mq/result-mq-ipc.txt task4_mq/command_used_mq.txt; do     [ -f "$f" ] || echo "Missing file: $f"; done
+  544  history | tail -n 20 > /home/hengrith/os-se-p20240034/os-class-activities-p20240034/activity2/task4_mq/command_used_mq.txt

@@ -1,0 +1,20 @@
+  505  .\winprocess.exe
+  506  cd /home/hengrith/os-se-p20240034/os-class-activities-p20240034/activity2/task1
+  507  gcc -o forkchild forkchild.c
+  508  ./forkchild > result_forkchild.txt 2>&1 &
+  509  ps -ef --forest | grep forkchild
+  510  history | tail -n 20 > /home/hengrith/os-se-p20240034/os-class-activities-p20240034/activity2/task1/command_used_forkchild.txt
+  511  sudo apt install cl-launch
+  512  cl winprocess.c
+  513  .\winprocess.exe
+  514  cl winprocess.c
+  515  nano /home/hengrith/os-se-p20240034/os-class-activities-p20240034/activity2/task3_shm/shm-producer.c
+  516  nano /home/hengrith/os-se-p20240034/os-class-activities-p20240034/activity2/task3_shm/shm-consumer.c
+  517  cd /home/hengrith/os-se-p20240034/os-class-activities-p20240034/activity2/task3_shm
+  518  gcc -o shm-producer shm-producer.c -lrt
+  519  gcc -o shm-consumer shm-consumer.c -lrt
+  520  ./shm-producer
+  521  ./shm-consumer > result-shm-ipc.txt
+  522  cat result-shm-ipc.txt
+  523  clear
+  524  history | tail -n 20 > /home/hengrith/os-se-p20240034/os-class-activities-p20240034/activity2/task3_shm/command_used_shm.txt
