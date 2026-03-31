@@ -1,0 +1,11 @@
+total 36
+drwxrwxr-x 2 hengrith hengrith  4096 Mar 31 13:52 .
+drwxrwxr-x 7 hengrith hengrith  4096 Mar 31 13:49 ..
+-rw-rw-r-- 1 hengrith hengrith   914 Mar 31 13:52 command_used_forkchild.txt
+-rwxrwxr-x 1 hengrith hengrith 16400 Mar 31 13:52 forkchild
+-rw-rw-r-- 1 hengrith hengrith  1080 Mar 31 13:48 forkchild.c
+-rw-rw-r-- 1 hengrith hengrith     0 Mar 31 13:52 result_forkchild.txt
+Parent process (PID: 5150) — creating child...
+Parent: waiting for child (PID: 5151) to finish...
+Parent: child exited with status 0
+Parent: done.

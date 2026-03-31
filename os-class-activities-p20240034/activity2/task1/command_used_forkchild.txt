@@ -1,0 +1,20 @@
+  484  ps -ef --forest | grep forkchild
+  485  history | tail -n 20 > /home/hengrith/os-se-p20240034/os-class-activities-p20240034/activity2/task1/command_used_forkchild.txt
+  486  ```
+  487  ---
+  488  ## Task 2 (Windows)
+  489  Create the file at:
+  490  ```
+  491  C:\...\activity2\task2\winprocess.c
+  492  history | tail -n 20 > /home/hengrith/os-se-p20240034/os-class-activities-p20240034/activity2/task1/command_used_forkchild.txt
+  493  ```
+  494  ---
+  495  ## Task 2 (Windows)
+  496  Create the file at:
+  497  ```
+  498  C:\...\activity2\task2\winprocess.c
+  499  cd /home/hengrith/os-se-p20240034/os-class-activities-p20240034/activity2/task1
+  500  gcc -o forkchild forkchild.c
+  501  ./forkchild > result_forkchild.txt 2>&1 &
+  502  ps -ef --forest | grep forkchild
+  503  history | tail -n 20 > /home/hengrith/os-se-p20240034/os-class-activities-p20240034/activity2/task1/command_used_forkchild.txt
