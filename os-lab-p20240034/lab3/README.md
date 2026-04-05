@@ -2,8 +2,8 @@
 
 - **Student Name:** Hengrith
 - **Student ID:** p20240034
-- **Partner Name (Task 5):** [Partner Name Here]
-- **Partner ID (Task 5):** [Partner Student ID Here]
+- **Partner Name (Task 5):** No pair
+- **Partner ID (Task 5):** No pair
 
 ---
 
