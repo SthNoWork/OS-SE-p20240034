@@ -80,7 +80,7 @@ After completing this lab, students will be able to:
 Navigate into your existing lab submission repository and create the `lab3` directory:
 
 ```bash
-cd ~/os-se-<YourStudentID>/os-lab-<YourStudentID>
+cd ~/os-se-p20240034/os-lab-p20240034
 mkdir lab3
 cd lab3
 ```
@@ -660,10 +660,10 @@ Before making any changes to the VM, create a snapshot so you can always restore
 5. Record what you changed:
 
    ```bash
-   echo "" >> ~/os-se-<YourStudentID>/os-lab-<YourStudentID>/lab3/task3_grub.txt
-   echo "=== Part B: GRUB Customization ===" >> ~/os-se-<YourStudentID>/os-lab-<YourStudentID>/lab3/task3_grub.txt
-   echo "--- Modified /etc/default/grub ---" >> ~/os-se-<YourStudentID>/os-lab-<YourStudentID>/lab3/task3_grub.txt
-   cat /etc/default/grub >> ~/os-se-<YourStudentID>/os-lab-<YourStudentID>/lab3/task3_grub.txt
+   echo "" >> ~/os-se-p20240034/os-lab-p20240034/lab3/task3_grub.txt
+   echo "=== Part B: GRUB Customization ===" >> ~/os-se-p20240034/os-lab-p20240034/lab3/task3_grub.txt
+   echo "--- Modified /etc/default/grub ---" >> ~/os-se-p20240034/os-lab-p20240034/lab3/task3_grub.txt
+   cat /etc/default/grub >> ~/os-se-p20240034/os-lab-p20240034/lab3/task3_grub.txt
    ```
 
 > 📸 **Screenshot `task3_timeout.png`:** Take a screenshot showing the modified `/etc/default/grub`.
@@ -704,9 +704,9 @@ Custom menu entries are added by creating a script in `/etc/grub.d/`. Scripts ar
 4. Record the new menu:
 
    ```bash
-   echo "" >> ~/os-se-<YourStudentID>/os-lab-<YourStudentID>/lab3/task3_grub.txt
-   echo "--- Custom script /etc/grub.d/40_custom_techcorp ---" >> ~/os-se-<YourStudentID>/os-lab-<YourStudentID>/lab3/task3_grub.txt
-   cat /etc/grub.d/40_custom_techcorp >> ~/os-se-<YourStudentID>/os-lab-<YourStudentID>/lab3/task3_grub.txt
+   echo "" >> ~/os-se-p20240034/os-lab-p20240034/lab3/task3_grub.txt
+   echo "--- Custom script /etc/grub.d/40_custom_techcorp ---" >> ~/os-se-p20240034/os-lab-p20240034/lab3/task3_grub.txt
+   cat /etc/grub.d/40_custom_techcorp >> ~/os-se-p20240034/os-lab-p20240034/lab3/task3_grub.txt
    ```
 
 5. Reboot and verify the new entry appears in the GRUB menu:
@@ -774,9 +774,9 @@ GRUB supports custom background images in `png`, `tga`, or `jpg` format. The ima
 5. Record the final configuration:
 
    ```bash
-   echo "" >> ~/os-se-<YourStudentID>/os-lab-<YourStudentID>/lab3/task3_grub.txt
-   echo "--- Final /etc/default/grub (with background) ---" >> ~/os-se-<YourStudentID>/os-lab-<YourStudentID>/lab3/task3_grub.txt
-   cat /etc/default/grub >> ~/os-se-<YourStudentID>/os-lab-<YourStudentID>/lab3/task3_grub.txt
+   echo "" >> ~/os-se-p20240034/os-lab-p20240034/lab3/task3_grub.txt
+   echo "--- Final /etc/default/grub (with background) ---" >> ~/os-se-p20240034/os-lab-p20240034/lab3/task3_grub.txt
+   cat /etc/default/grub >> ~/os-se-p20240034/os-lab-p20240034/lab3/task3_grub.txt
    ```
 
 > 📸 **Screenshot `task3_background.png`:** Take a screenshot of the GRUB menu showing the custom background image.
@@ -925,11 +925,11 @@ Once the system boots (you may need to log in):
 3. After normal boot, record the result:
 
    ```bash
-   echo "" >> ~/os-se-<YourStudentID>/os-lab-<YourStudentID>/lab3/task3_grub.txt
-   echo "=== Part C: Boot Recovery ===" >> ~/os-se-<YourStudentID>/os-lab-<YourStudentID>/lab3/task3_grub.txt
-   echo "Boot recovery successful on $(date)" >> ~/os-se-<YourStudentID>/os-lab-<YourStudentID>/lab3/task3_grub.txt
-   uname -r >> ~/os-se-<YourStudentID>/os-lab-<YourStudentID>/lab3/task3_grub.txt
-   uptime >> ~/os-se-<YourStudentID>/os-lab-<YourStudentID>/lab3/task3_grub.txt
+   echo "" >> ~/os-se-p20240034/os-lab-p20240034/lab3/task3_grub.txt
+   echo "=== Part C: Boot Recovery ===" >> ~/os-se-p20240034/os-lab-p20240034/lab3/task3_grub.txt
+   echo "Boot recovery successful on $(date)" >> ~/os-se-p20240034/os-lab-p20240034/lab3/task3_grub.txt
+   uname -r >> ~/os-se-p20240034/os-lab-p20240034/lab3/task3_grub.txt
+   uptime >> ~/os-se-p20240034/os-lab-p20240034/lab3/task3_grub.txt
    ```
 
 > 📸 **Screenshot `task3_restored.png`:** Take a screenshot showing the restored configuration (`ls -la`, `head`) and the system booted normally with `uname -r` and `uptime`.
@@ -1461,14 +1461,14 @@ You have finished all terminal work. Now push your folder to GitHub and document
 2. Verify your folder structure with `tree`:
 
    ```bash
-   cd ~/os-se-<YourStudentID>/os-lab-<YourStudentID>
+   cd ~/os-se-p20240034/os-lab-p20240034
    tree lab3
    ```
 
 3. Commit and push your work:
 
    ```bash
-   cd ~/os-se-<YourStudentID>
+   cd ~/os-se-p20240034
    git add .
    git commit -m "Completed Lab 3 — Wildcards, Links, GRUB & Shared Libraries"
    git push
@@ -1479,7 +1479,7 @@ You have finished all terminal work. Now push your folder to GitHub and document
 1. **Pull the latest code** to your host machine:
 
    ```bash
-   cd OS-SE-<YourStudentID>
+   cd os-se-p20240034
    git pull
    ```
 
@@ -1508,14 +1508,14 @@ You have finished all terminal work. Now push your folder to GitHub and document
 2. **Pull latest changes:**
 
    ```bash
-   cd ~/OS-SE-<YourStudentID>
+   cd ~/os-se-p20240034
    git pull
    ```
 
 3. **Verify:**
 
    ```bash
-   tree ~/OS-SE-<YourStudentID>/os-lab-<YourStudentID>/lab3
+   tree ~/os-se-p20240034/os-lab-p20240034/lab3
    ```
 
 4. **Log out:**
@@ -1559,8 +1559,8 @@ Use this checklist to make sure you have every required screenshot before moving
 After completing all tasks and documentation, your `lab3` folder should look like this:
 
 ```
-os-se-<YourStudentID>/
-└── os-lab-<YourStudentID>/
+os-se-p20240034/
+└── os-lab-p20240034/
     └── lab3/
         ├── README.md
         ├── images/
@@ -1615,4 +1615,4 @@ os-se-<YourStudentID>/
             └── sysinfo_test_v2
 ```
 
-> **Tip:** Run `tree lab3` from your `os-lab-<YourStudentID>` directory to verify your structure matches the one above before submitting.
+> **Tip:** Run `tree lab3` from your `os-lab-p20240034` directory to verify your structure matches the one above before submitting.

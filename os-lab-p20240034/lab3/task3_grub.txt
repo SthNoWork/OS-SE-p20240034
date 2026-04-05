@@ -1,0 +1,90 @@
+=== Task 3: GRUB Bootloader Exploration ===
+--- Current kernel version ---
+6.17.0-19-generic
+
+--- GRUB directory listing ---
+total 2404
+drwxr-xr-x 5 root root    4096 Mar 17 13:48 .
+drwxr-xr-x 3 root root    4096 Mar 31 13:31 ..
+drwxr-xr-x 2 root root    4096 Mar 12 12:25 fonts
+-rw-r--r-- 1 root root     712 Mar 12 12:24 gfxblacklist.txt
+-rw------- 1 root root   10443 Mar 17 13:48 grub.cfg
+-rw-r--r-- 1 root root    1024 Mar 31 13:37 grubenv
+drwxr-xr-x 2 root root   12288 Mar 12 12:25 i386-pc
+drwxr-xr-x 2 root root    4096 Mar 12 12:25 locale
+-rw-r--r-- 1 root root 2411806 Mar 12 12:25 unicode.pf2
+
+--- GRUB config (/boot/grub/grub.cfg) - first 60 lines ---
+head: cannot open '/boot/grub/grub.cfg' for reading: Permission denied
+
+--- GRUB defaults (/etc/default/grub) ---
+# If you change this file, run 'update-grub' afterwards to update
+# /boot/grub/grub.cfg.
+# For full documentation of the options in this file, see:
+#   info -f grub -n 'Simple configuration'
+
+GRUB_DEFAULT=0
+GRUB_TIMEOUT_STYLE=hidden
+GRUB_TIMEOUT=0
+GRUB_DISTRIBUTOR=`( . /etc/os-release; echo ${NAME:-Ubuntu} ) 2>/dev/null || echo Ubuntu`
+GRUB_CMDLINE_LINUX_DEFAULT="quiet splash"
+GRUB_CMDLINE_LINUX=""
+
+# If your computer has multiple operating systems installed, then you
+# probably want to run os-prober. However, if your computer is a host
+# for guest OSes installed via LVM or raw disk devices, running
+# os-prober can cause damage to those guest OSes as it mounts
+# filesystems to look for things.
+#GRUB_DISABLE_OS_PROBER=false
+
+# Uncomment to enable BadRAM filtering, modify to suit your needs
+# This works with Linux (no patch required) and with any kernel that obtains
+# the memory map information from GRUB (GNU Mach, kernel of FreeBSD ...)
+#GRUB_BADRAM="0x01234567,0xfefefefe,0x89abcdef,0xefefefef"
+
+# Uncomment to disable graphical terminal
+#GRUB_TERMINAL=console
+
+# The resolution used on graphical terminal
+# note that you can use only modes which your graphic card supports via VBE
+# you can see them in real GRUB with the command `vbeinfo'
+#GRUB_GFXMODE=640x480
+
+# Uncomment if you don't want GRUB to pass "root=UUID=xxx" parameter to Linux
+#GRUB_DISABLE_LINUX_UUID=true
+
+# Uncomment to disable generation of recovery mode menu entries
+#GRUB_DISABLE_RECOVERY="true"
+
+# Uncomment to get a beep at grub start
+#GRUB_INIT_TUNE="480 440 1"
+
+--- Installed kernels in /boot ---
+lrwxrwxrwx 1 root root  25 Mar 17 13:47 /boot/vmlinuz -> vmlinuz-6.17.0-19-generic
+-rw------- 1 root root 16M Jan 15 21:20 /boot/vmlinuz-6.17.0-14-generic
+-rw------- 1 root root 16M Mar  7 04:18 /boot/vmlinuz-6.17.0-19-generic
+lrwxrwxrwx 1 root root  25 Mar 12 12:25 /boot/vmlinuz.old -> vmlinuz-6.17.0-14-generic
+lrwxrwxrwx 1 root root  28 Mar 17 13:47 /boot/initrd.img -> initrd.img-6.17.0-19-generic
+-rw-r--r-- 1 root root 75M Mar 12 12:25 /boot/initrd.img-6.17.0-14-generic
+-rw-r--r-- 1 root root 75M Mar 31 13:31 /boot/initrd.img-6.17.0-19-generic
+lrwxrwxrwx 1 root root  28 Mar 12 12:25 /boot/initrd.img.old -> initrd.img-6.17.0-14-generic
+
+--- Early kernel boot messages (first 40 lines) ---
+
+--- GRUB scripts in /etc/grub.d/ ---
+total 164
+drwxr-xr-x   2 root root  4096 Feb 10 07:33 .
+drwxr-xr-x 139 root root 12288 Mar 31 13:55 ..
+-rwxr-xr-x   1 root root 10661 Mar 17  2025 00_header
+-rwxr-xr-x   1 root root  6260 Mar 17  2025 05_debian_theme
+-rwxr-xr-x   1 root root 18133 Mar 17  2025 10_linux
+-rwxr-xr-x   1 root root 43202 Mar 17  2025 10_linux_zfs
+-rwxr-xr-x   1 root root 14513 Mar 17  2025 20_linux_xen
+-rwxr-xr-x   1 root root  4228 Apr  8  2024 20_memtest86+
+-rwxr-xr-x   1 root root   786 Mar 17  2025 25_bli
+-rwxr-xr-x   1 root root 13120 Mar 17  2025 30_os-prober
+-rwxr-xr-x   1 root root  1174 Mar 17  2025 30_uefi-firmware
+-rwxr-xr-x   1 root root   722 Nov 30 20:12 35_fwupd
+-rwxr-xr-x   1 root root   214 Mar 17  2025 40_custom
+-rwxr-xr-x   1 root root   215 Mar 17  2025 41_custom
+-rw-r--r--   1 root root   483 Mar 17  2025 README

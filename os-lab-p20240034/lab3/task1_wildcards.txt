@@ -1,0 +1,124 @@
+=== Task 1: Wildcards ===
+--- All .txt files ---
+notes.txt
+readme.txt
+report01.txt
+report02.txt
+report03.txt
+report10.txt
+summary.txt
+--- All files starting with 'report' ---
+report01.txt
+report02.txt
+report03.txt
+report10.txt
+--- All files starting with 'log_' ---
+log_apr.log
+log_feb.log
+log_jan.log
+log_mar.log
+--- Files matching 'data0?.csv' (single digit) ---
+data01.csv
+data02.csv
+data03.csv
+--- Files matching 'image?.png' ---
+image1.png
+image2.png
+--- Files matching 'temp?.tmp' ---
+temp1.tmp
+temp2.tmp
+temp3.tmp
+--- Files matching 'report0[1-3].txt' ---
+report01.txt
+report02.txt
+report03.txt
+--- Files matching 'image[1-2].*' ---
+image1.png
+image2.png
+--- Files matching 'log_[jfm]*.log' ---
+log_feb.log
+log_jan.log
+log_mar.log
+--- .log files NOT starting with 'log_j' ---
+log_apr.log
+log_feb.log
+log_mar.log
+--- List both .yaml and .yml files ---
+config.yaml
+config.yml
+--- List all image files (.png and .jpg) ---
+image1.png
+image2.png
+image3.jpg
+image4.jpg
+--- Copied CSV files to csv_archive/ ---
+data01.csv
+data02.csv
+data03.csv
+--- After removing all .tmp files ---
+backup1.tar.gz
+backup2.tar.gz
+config.yaml
+config.yml
+data01.csv
+data02.csv
+data03.csv
+image1.png
+image2.png
+image3.jpg
+image4.jpg
+log_apr.log
+log_feb.log
+log_jan.log
+log_mar.log
+notes.txt
+readme.txt
+report01.txt
+report02.txt
+report03.txt
+report10.txt
+settings.json
+summary.txt
+--- Challenge Wildcards ---
+1a: .txt files starting with r ---
+wildcard_lab/readme.txt
+wildcard_lab/report01.txt
+wildcard_lab/report02.txt
+wildcard_lab/report03.txt
+wildcard_lab/report10.txt
+1b: single char between image and extension ---
+wildcard_lab/image1.png
+wildcard_lab/image2.png
+wildcard_lab/image3.jpg
+wildcard_lab/image4.jpg
+1c: memo files ---
+wildcard_lab/memo_fri.txt
+wildcard_lab/memo_mon.txt
+wildcard_lab/memo_thu.txt
+wildcard_lab/memo_tue.txt
+wildcard_lab/memo_wed.txt
+1d: removing .log files ---
+backup1.tar.gz
+backup2.tar.gz
+config.yaml
+config.yml
+data01.csv
+data02.csv
+data03.csv
+image1.png
+image2.png
+image3.jpg
+image4.jpg
+memo_fri.txt
+memo_mon.txt
+memo_thu.txt
+memo_tue.txt
+memo_wed.txt
+notes.txt
+readme.txt
+report01.txt
+report02.txt
+report03.txt
+report10.txt
+settings.json
+summary.txt

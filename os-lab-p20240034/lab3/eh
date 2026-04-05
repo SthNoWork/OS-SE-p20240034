@@ -1,0 +1,53 @@
+cd ~/os-se-p20240034/os-lab-p20240034/lab3/links_lab
+echo "=== Task 2: Hard Links and Symbolic Links ===" > ../task2_links.txt
+echo "TechCorp Global Configuration v3.1" > config_original.txt
+echo "--- Original file ---" >> ../task2_links.txt
+ls -li config_original.txt >> ../task2_links.txt
+cat config_original.txt >> ../task2_links.txt
+ln config_original.txt config_hardlink.txt
+echo "" >> ../task2_links.txt
+echo "--- After creating hard link ---" >> ../task2_links.txt
+ls -li config_original.txt config_hardlink.txt >> ../task2_links.txt
+ln -s config_original.txt config_symlink.txt
+echo "" >> ../task2_links.txt
+echo "--- After creating symbolic link ---" >> ../task2_links.txt
+ls -li config_original.txt config_hardlink.txt config_symlink.txt >> ../task2_links.txt
+echo "" >> ../task2_links.txt
+echo "--- Content via hard link ---" >> ../task2_links.txt
+cat config_hardlink.txt >> ../task2_links.txt
+echo "--- Content via symbolic link ---" >> ../task2_links.txt
+cat config_symlink.txt >> ../task2_links.txt
+echo "Updated: New security patch applied." >> config_original.txt
+echo "" >> ../task2_links.txt
+echo "--- After modifying original ---" >> ../task2_links.txt
+echo "Hard link content:" >> ../task2_links.txt
+cat config_hardlink.txt >> ../task2_links.txt
+echo "Symlink content:" >> ../task2_links.txt
+cat config_symlink.txt >> ../task2_links.txt
+rm config_original.txt
+echo "" >> ../task2_links.txt
+echo "--- After deleting original file ---" >> ../task2_links.txt
+echo "Hard link still works:" >> ../task2_links.txt
+cat config_hardlink.txt >> ../task2_links.txt
+echo "Symlink is broken:" >> ../task2_links.txt
+cat config_symlink.txt >> ../task2_links.txt 2>&1
+ls -li config_hardlink.txt config_symlink.txt >> ../task2_links.txt 2>&1
+echo "" >> ../task2_links.txt
+echo "--- stat on hard link ---" >> ../task2_links.txt
+stat config_hardlink.txt >> ../task2_links.txt
+echo "--- readlink on symlink ---" >> ../task2_links.txt
+readlink config_symlink.txt >> ../task2_links.txt
+mkdir -p projects/frontend
+echo "index.html placeholder" > projects/frontend/index.html
+ln -s projects/frontend web_shortcut
+echo "" >> ../task2_links.txt
+echo "--- Symlink to directory ---" >> ../task2_links.txt
+ls -ld web_shortcut >> ../task2_links.txt
+ls web_shortcut/ >> ../task2_links.txt
+echo "" >> ../task2_links.txt
+echo "--- Real-world symlinks in /usr/bin ---" >> ../task2_links.txt
+ls -la /usr/bin/python* >> ../task2_links.txt 2>&1
+ls -la /usr/bin/editor >> ../task2_links.txt 2>&1
+echo "--- Symlinks in /etc/alternatives ---" >> ../task2_links.txt
+ls -la /etc/alternatives/ | head -20 >> ../task2_links.txt
+cd ..
