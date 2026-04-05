@@ -1,0 +1,1067 @@
+=== Task 4: Shared Objects ===
+--- Shared libraries used by /bin/ls ---
+	linux-vdso.so.1 (0x0000781af5d29000)
+	libselinux.so.1 => /lib/x86_64-linux-gnu/libselinux.so.1 (0x0000781af5cc1000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x0000781af5a00000)
+	libpcre2-8.so.0 => /lib/x86_64-linux-gnu/libpcre2-8.so.0 (0x0000781af5c27000)
+	/lib64/ld-linux-x86-64.so.2 (0x0000781af5d2b000)
+
+--- Shared libraries used by /bin/bash ---
+	linux-vdso.so.1 (0x00007feef5e52000)
+	libtinfo.so.6 => /lib/x86_64-linux-gnu/libtinfo.so.6 (0x00007feef5c9c000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007feef5a00000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007feef5e54000)
+
+--- Shared libraries used by /usr/bin/grep ---
+	linux-vdso.so.1 (0x00007e21cfe81000)
+	libpcre2-8.so.0 => /lib/x86_64-linux-gnu/libpcre2-8.so.0 (0x00007e21cfd92000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007e21cfa00000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007e21cfe83000)
+
+--- File type of libc ---
+/lib/x86_64-linux-gnu/libc.so.6: ELF 64-bit LSB shared object, x86-64, version 1 (GNU/Linux), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=8e9fd827446c24067541ac5390e6f527fb5947bb, for GNU/Linux 3.2.0, stripped
+
+--- Contents of /lib/x86_64-linux-gnu/ (first 30 lines) ---
+/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+/lib/x86_64-linux-gnu/libaa.so.1
+/lib/x86_64-linux-gnu/libaa.so.1.0.4
+/lib/x86_64-linux-gnu/libabsl_bad_any_cast_impl.so.20220623
+/lib/x86_64-linux-gnu/libabsl_bad_any_cast_impl.so.20220623.0.0
+/lib/x86_64-linux-gnu/libabsl_bad_optional_access.so.20220623
+/lib/x86_64-linux-gnu/libabsl_bad_optional_access.so.20220623.0.0
+/lib/x86_64-linux-gnu/libabsl_bad_variant_access.so.20220623
+/lib/x86_64-linux-gnu/libabsl_bad_variant_access.so.20220623.0.0
+/lib/x86_64-linux-gnu/libabsl_base.so.20220623
+/lib/x86_64-linux-gnu/libabsl_base.so.20220623.0.0
+/lib/x86_64-linux-gnu/libabsl_city.so.20220623
+/lib/x86_64-linux-gnu/libabsl_city.so.20220623.0.0
+/lib/x86_64-linux-gnu/libabsl_civil_time.so.20220623
+/lib/x86_64-linux-gnu/libabsl_civil_time.so.20220623.0.0
+/lib/x86_64-linux-gnu/libabsl_cord_internal.so.20220623
+/lib/x86_64-linux-gnu/libabsl_cord_internal.so.20220623.0.0
+/lib/x86_64-linux-gnu/libabsl_cord.so.20220623
+/lib/x86_64-linux-gnu/libabsl_cord.so.20220623.0.0
+/lib/x86_64-linux-gnu/libabsl_cordz_functions.so.20220623
+/lib/x86_64-linux-gnu/libabsl_cordz_functions.so.20220623.0.0
+/lib/x86_64-linux-gnu/libabsl_cordz_handle.so.20220623
+/lib/x86_64-linux-gnu/libabsl_cordz_handle.so.20220623.0.0
+/lib/x86_64-linux-gnu/libabsl_cordz_info.so.20220623
+/lib/x86_64-linux-gnu/libabsl_cordz_info.so.20220623.0.0
+/lib/x86_64-linux-gnu/libabsl_cordz_sample_token.so.20220623
+/lib/x86_64-linux-gnu/libabsl_cordz_sample_token.so.20220623.0.0
+/lib/x86_64-linux-gnu/libabsl_debugging_internal.so.20220623
+/lib/x86_64-linux-gnu/libabsl_debugging_internal.so.20220623.0.0
+/lib/x86_64-linux-gnu/libabsl_demangle_internal.so.20220623
+
+--- Contents of /usr/lib/ (first 20 lines) ---
+/usr/lib/klibc-sw0VayLfV0hmLGCQE9vyfOnj81g.so
+
+--- Shared library cache: searching for 'libc' ---
+	libzstd.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libzstd.so.1
+	libz.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libz.so.1
+	libyelp.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libyelp.so.0
+	libyaml-0.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libyaml-0.so.2
+	libxxhash.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxxhash.so.0
+	libxtables.so.12 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxtables.so.12
+	libxslt.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxslt.so.1
+	libxshmfence.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxshmfence.so.1
+	libxml2.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxml2.so.2
+	libxmlb.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxmlb.so.2
+	libxklavier.so.16 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxklavier.so.16
+	libxkbregistry.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxkbregistry.so.0
+	libxkbfile.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxkbfile.so.1
+	libxkbcommon.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxkbcommon.so.0
+	libxkbcommon-x11.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxkbcommon-x11.so.0
+	libxcvt.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcvt.so.0
+	libxcb.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb.so.1
+	libxcb-xv.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-xv.so.0
+	libxcb-xkb.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-xkb.so.1
+	libxcb-xfixes.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-xfixes.so.0
+	libxcb-util.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-util.so.1
+	libxcb-sync.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-sync.so.1
+	libxcb-shm.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-shm.so.0
+	libxcb-shape.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-shape.so.0
+	libxcb-res.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-res.so.0
+	libxcb-render.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-render.so.0
+	libxcb-render-util.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-render-util.so.0
+	libxcb-randr.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-randr.so.0
+	libxcb-present.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-present.so.0
+	libxcb-keysyms.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-keysyms.so.1
+	libxcb-image.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-image.so.0
+	libxcb-icccm.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-icccm.so.4
+	libxcb-glx.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-glx.so.0
+	libxcb-dri3.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-dri3.so.0
+	libxcb-dri2.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-dri2.so.0
+	libxcb-damage.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxcb-damage.so.0
+	libxatracker.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libxatracker.so.2
+	libwrap.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwrap.so.0
+	libwoff2enc.so.1.0.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwoff2enc.so.1.0.2
+	libwoff2dec.so.1.0.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwoff2dec.so.1.0.2
+	libwoff2common.so.1.0.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwoff2common.so.1.0.2
+	libwnck-3.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwnck-3.so.0
+	libwmflite-0.2.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwmflite-0.2.so.7
+	libwmf-0.2.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwmf-0.2.so.7
+	libwireplumber-0.4.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwireplumber-0.4.so.0
+	libwinpr3.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwinpr3.so.3
+	libwhoopsie.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwhoopsie.so.0
+	libwhoopsie-preferences.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwhoopsie-preferences.so.0
+	libwebrtc_audio_processing.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwebrtc_audio_processing.so.1
+	libwebpmux.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwebpmux.so.3
+	libwebpdemux.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwebpdemux.so.2
+	libwebp.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwebp.so.7
+	libwebkit2gtk-4.1.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwebkit2gtk-4.1.so.0
+	libwebkitgtk-6.0.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwebkitgtk-6.0.so.4
+	libwbclient.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwbclient.so.0
+	libwayland-server.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwayland-server.so.0
+	libwayland-egl.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwayland-egl.so.1
+	libwayland-cursor.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwayland-cursor.so.0
+	libwayland-client.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwayland-client.so.0
+	libwavpack.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwavpack.so.1
+	libwacom.so.9 (libc6,x86-64) => /lib/x86_64-linux-gnu/libwacom.so.9
+	libv4l2.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libv4l2.so.0
+	libv4l1.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libv4l1.so.0
+	libv4lconvert.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libv4lconvert.so.0
+	libvulkan_virtio.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libvulkan_virtio.so
+	libvulkan_radeon.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libvulkan_radeon.so
+	libvulkan_nouveau.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libvulkan_nouveau.so
+	libvulkan_lvp.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libvulkan_lvp.so
+	libvulkan_intel_hasvk.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libvulkan_intel_hasvk.so
+	libvulkan_intel.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libvulkan_intel.so
+	libvulkan_gfxstream.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libvulkan_gfxstream.so
+	libvulkan_asahi.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libvulkan_asahi.so
+	libvulkan.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libvulkan.so.1
+	libvte-2.91.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libvte-2.91.so.0
+	libvpx.so.9 (libc6,x86-64) => /lib/x86_64-linux-gnu/libvpx.so.9
+	libvorbisfile.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libvorbisfile.so.3
+	libvorbisenc.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libvorbisenc.so.2
+	libvorbis.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libvorbis.so.0
+	libvolume_key.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libvolume_key.so.1
+	libvisual-0.4.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libvisual-0.4.so.0
+	libuv.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libuv.so.1
+	libuuid.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libuuid.so.1
+	libutil.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libutil.so.1
+	libutempter.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libutempter.so.0
+	libusbmuxd-2.0.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libusbmuxd-2.0.so.6
+	libusb-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libusb-1.0.so.0
+	libupower-glib.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libupower-glib.so.3
+	libunwind.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libunwind.so.8
+	libunwind-x86_64.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libunwind-x86_64.so.8
+	libunwind-ptrace.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libunwind-ptrace.so.0
+	libunwind-coredump.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libunwind-coredump.so.0
+	libunity.so.9 (libc6,x86-64) => /lib/x86_64-linux-gnu/libunity.so.9
+	libunity-extras.so.9 (libc6,x86-64) => /lib/x86_64-linux-gnu/libunity-extras.so.9
+	libunistring.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libunistring.so.5
+	libudisks2.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libudisks2.so.0
+	libudev.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libudev.so.1
+	libuchardet.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libuchardet.so.0
+	libubsan.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libubsan.so.1
+	libtwolame.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtwolame.so.0
+	libtss2-tctildr.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtss2-tctildr.so.0
+	libtss2-tcti-swtpm.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtss2-tcti-swtpm.so.0
+	libtss2-tcti-spi-helper.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtss2-tcti-spi-helper.so.0
+	libtss2-tcti-mssim.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtss2-tcti-mssim.so.0
+	libtss2-tcti-libtpms.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtss2-tcti-libtpms.so.0
+	libtss2-tcti-device.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtss2-tcti-device.so.0
+	libtss2-tcti-cmd.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtss2-tcti-cmd.so.0
+	libtss2-sys.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtss2-sys.so.1
+	libtss2-rc.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtss2-rc.so.0
+	libtss2-mu.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtss2-mu.so.0
+	libtss2-esys.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtss2-esys.so.0
+	libtsan.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtsan.so.2
+	libtracker-sparql-3.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtracker-sparql-3.0.so.0
+	libtracefs.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtracefs.so.1
+	libtraceevent.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtraceevent.so.1
+	libtotem-plparser.so.18 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtotem-plparser.so.18
+	libtotem-plparser-mini.so.18 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtotem-plparser-mini.so.18
+	libtirpc.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtirpc.so.3
+	libtinfo.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtinfo.so.6
+	libtiff.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtiff.so.6
+	libtic.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtic.so.6
+	libthread_db.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libthread_db.so.1
+	libthread_db.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libthread_db.so
+	libtheoraenc.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtheoraenc.so.1
+	libtheoradec.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtheoradec.so.1
+	libtheora.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtheora.so.0
+	libthai.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libthai.so.0
+	libtevent.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtevent.so.0
+	libtevent-util.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtevent-util.so.0
+	libteamdctl.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libteamdctl.so.0
+	libtdb.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtdb.so.1
+	libtcl8.6.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libtcl8.6.so
+	libtasn1.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtasn1.so.6
+	libtalloc.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtalloc.so.2
+	libtag.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libtag.so.1
+	libsystemd.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsystemd.so.0
+	libsysmetrics.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsysmetrics.so.1
+	libsynctex.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsynctex.so.2
+	libsubid_sss.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libsubid_sss.so
+	libstemmer.so.0d (libc6,x86-64) => /lib/x86_64-linux-gnu/libstemmer.so.0d
+	libstdc++.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libstdc++.so.6
+	libstartup-notification-1.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libstartup-notification-1.so.0
+	libsss_nss_idmap.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsss_nss_idmap.so.0
+	libsss_idmap.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsss_idmap.so.0
+	libsss_certmap.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsss_certmap.so.0
+	libssl3.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libssl3.so
+	libssl.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libssl.so.3
+	libssh2.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libssh2.so.1
+	libssh.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libssh.so.4
+	libss.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libss.so.2
+	libsqlite3.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsqlite3.so.0
+	libspeexdsp.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libspeexdsp.so.1
+	libspeex.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libspeex.so.1
+	libspeechd.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libspeechd.so.2
+	libspectre.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libspectre.so.1
+	libsource-highlight.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsource-highlight.so.4
+	libsoup-3.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsoup-3.0.so.0
+	libsoup-2.4.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsoup-2.4.so.1
+	libsonic.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsonic.so.0
+	libsoftokn3.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libsoftokn3.so
+	libsnmp.so.40 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsnmp.so.40
+	libsndfile.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsndfile.so.1
+	libsnapd-glib-2.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsnapd-glib-2.so.1
+	libsmime3.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libsmime3.so
+	libsmbldap.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsmbldap.so.2
+	libsmbconf.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsmbconf.so.0
+	libsmbclient.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsmbclient.so.0
+	libsmartcols.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsmartcols.so.1
+	libslang.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libslang.so.2
+	libsigc-3.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsigc-3.0.so.0
+	libshout.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libshout.so.3
+	libsharpyuv.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsharpyuv.so.0
+	libsframe.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsframe.so.1
+	libsepol.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsepol.so.2
+	libsensors.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsensors.so.5
+	libsemanage.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsemanage.so.2
+	libselinux.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libselinux.so.1
+	libsecret-1.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsecret-1.so.0
+	libseccomp.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libseccomp.so.2
+	libsbc.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsbc.so.1
+	libsasl2.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsasl2.so.2
+	libsane.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsane.so.1
+	libsamplerate.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsamplerate.so.0
+	libsamdb.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsamdb.so.0
+	libsamba-util.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsamba-util.so.0
+	libsamba-passdb.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsamba-passdb.so.0
+	libsamba-hostconfig.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsamba-hostconfig.so.0
+	libsamba-errors.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsamba-errors.so.1
+	libsamba-credentials.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libsamba-credentials.so.1
+	librygel-server-2.8.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/librygel-server-2.8.so.0
+	librygel-renderer-2.8.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/librygel-renderer-2.8.so.0
+	librygel-db-2.8.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/librygel-db-2.8.so.0
+	librygel-core-2.8.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/librygel-core-2.8.so.0
+	librtmp.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/librtmp.so.1
+	librt.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/librt.so.1
+	librsvg-2.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/librsvg-2.so.2
+	librom1394.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/librom1394.so.0
+	libroc.so.0.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libroc.so.0.3
+	librest-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/librest-1.0.so.0
+	libresolv.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libresolv.so.2
+	libresolv.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libresolv.so
+	libref_array.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libref_array.so.1
+	libreadline.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libreadline.so.8
+	libraw1394.so.11 (libc6,x86-64) => /lib/x86_64-linux-gnu/libraw1394.so.11
+	libraqm.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libraqm.so.0
+	libquadmath.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libquadmath.so.0
+	libqrtr-glib.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libqrtr-glib.so.0
+	libqpdf.so.29 (libc6,x86-64) => /lib/x86_64-linux-gnu/libqpdf.so.29
+	libqmi-glib.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libqmi-glib.so.5
+	libp11-kit.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libp11-kit.so.0
+	libpython3.12.so.1.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpython3.12.so.1.0
+	libpwquality.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpwquality.so.1
+	libpulse.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpulse.so.0
+	libpulse-simple.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpulse-simple.so.0
+	libpulse-mainloop-glib.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpulse-mainloop-glib.so.0
+	libpthread.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpthread.so.0
+	libpsx.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpsx.so.2
+	libpspell.so.15 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpspell.so.15
+	libpsl.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpsl.so.5
+	libproxy.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libproxy.so.1
+	libprotobuf.so.32 (libc6,x86-64) => /lib/x86_64-linux-gnu/libprotobuf.so.32
+	libprotobuf-c.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libprotobuf-c.so.1
+	libproc2.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libproc2.so.0
+	libppd.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libppd.so.2
+	libportal.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libportal.so.1
+	libportal-gtk4.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libportal-gtk4.so.1
+	libpopt.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpopt.so.0
+	libpoppler.so.134 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpoppler.so.134
+	libpoppler-glib.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpoppler-glib.so.8
+	libpoppler-cpp.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpoppler-cpp.so.0
+	libpolkit-gobject-1.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpolkit-gobject-1.so.0
+	libpolkit-agent-1.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpolkit-agent-1.so.0
+	libpng16.so.16 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpng16.so.16
+	libply.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libply.so.5
+	libply-splash-graphics.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libply-splash-graphics.so.5
+	libply-splash-core.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libply-splash-core.so.5
+	libply-boot-client.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libply-boot-client.so.5
+	libplist-2.0.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libplist-2.0.so.4
+	libplds4.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libplds4.so
+	libplc4.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libplc4.so
+	libpkcs11-helper.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpkcs11-helper.so.1
+	libpixman-1.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpixman-1.so.0
+	libpipewire-0.3.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpipewire-0.3.so.0
+	libpipeline.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpipeline.so.1
+	libpinyin.so.15 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpinyin.so.15
+	libphonenumber.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libphonenumber.so.8
+	libperl.so.5.38 (libc6,x86-64) => /lib/x86_64-linux-gnu/libperl.so.5.38
+	libpeas-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpeas-1.0.so.0
+	libpeas-gtk-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpeas-gtk-1.0.so.0
+	libpcsclite.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpcsclite.so.1
+	libpcre2-32.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpcre2-32.so.0
+	libpcre2-8.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpcre2-8.so.0
+	libpcprofile.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libpcprofile.so
+	libpciaccess.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpciaccess.so.0
+	libpci.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpci.so.3
+	libpcaudio.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpcaudio.so.0
+	libpcap.so.0.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpcap.so.0.8
+	libpath_utils.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpath_utils.so.1
+	libparted.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libparted.so.2
+	libpaper.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpaper.so.1
+	libpangoxft-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpangoxft-1.0.so.0
+	libpangomm-2.48.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpangomm-2.48.so.1
+	libpangoft2-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpangoft2-1.0.so.0
+	libpangocairo-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpangocairo-1.0.so.0
+	libpango-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpango-1.0.so.0
+	libpanelw.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpanelw.so.6
+	libpanel.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpanel.so.6
+	libpamc.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpamc.so.0
+	libpam_misc.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpam_misc.so.0
+	libpam.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpam.so.0
+	libpackagekit-glib2.so.18 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpackagekit-glib2.so.18
+	libotf.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libotf.so.1
+	liborc-0.4.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/liborc-0.4.so.0
+	liborc-test-0.4.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/liborc-test-0.4.so.0
+	libopus.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libopus.so.0
+	libopenjp2.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libopenjp2.so.7
+	libopencc.so.1.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libopencc.so.1.1
+	libopcodes-2.42-system.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libopcodes-2.42-system.so
+	libonig.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libonig.so.5
+	libogg.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libogg.so.0
+	libnvme.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnvme.so.1
+	libnvme-mi.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnvme-mi.so.1
+	libnuma.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnuma.so.1
+	libntfs-3g.so.89 (libc6,x86-64) => /lib/x86_64-linux-gnu/libntfs-3g.so.89
+	libnss3.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libnss3.so
+	libnssutil3.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libnssutil3.so
+	libnssdbm3.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libnssdbm3.so
+	libnssckbi.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libnssckbi.so
+	libnss_systemd.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnss_systemd.so.2
+	libnss_sss.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnss_sss.so.2
+	libnss_mdns6_minimal.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnss_mdns6_minimal.so.2
+	libnss_mdns6.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnss_mdns6.so.2
+	libnss_mdns4_minimal.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnss_mdns4_minimal.so.2
+	libnss_mdns4.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnss_mdns4.so.2
+	libnss_mdns_minimal.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnss_mdns_minimal.so.2
+	libnss_mdns.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnss_mdns.so.2
+	libnss_hesiod.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnss_hesiod.so.2
+	libnss_hesiod.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libnss_hesiod.so
+	libnss_files.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnss_files.so.2
+	libnss_dns.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnss_dns.so.2
+	libnss_compat.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnss_compat.so.2
+	libnss_compat.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libnss_compat.so
+	libnspr4.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libnspr4.so
+	libnsl.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnsl.so.1
+	libns-9.18.39-0ubuntu0.24.04.3-Ubuntu.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libns-9.18.39-0ubuntu0.24.04.3-Ubuntu.so
+	libnpth.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnpth.so.0
+	libnotify.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnotify.so.4
+	libnma.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnma.so.0
+	libnma-gtk4.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnma-gtk4.so.0
+	libnm.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnm.so.0
+	libnl-3.so.200 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnl-3.so.200
+	libnl-route-3.so.200 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnl-route-3.so.200
+	libnl-genl-3.so.200 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnl-genl-3.so.200
+	libnghttp2.so.14 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnghttp2.so.14
+	libnftnl.so.11 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnftnl.so.11
+	libnftables.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnftables.so.1
+	libnfsidmap.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnfsidmap.so.1
+	libnfs.so.14 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnfs.so.14
+	libnfnetlink.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnfnetlink.so.0
+	libnewt.so.0.52 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnewt.so.0.52
+	libnettle.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnettle.so.8
+	libnetsnmpmibs.so.40 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnetsnmpmibs.so.40
+	libnetsnmphelpers.so.40 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnetsnmphelpers.so.40
+	libnetsnmpagent.so.40 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnetsnmpagent.so.40
+	libnetsnmp.so.40 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnetsnmp.so.40
+	libnetplan.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnetplan.so.1
+	libnetfilter_conntrack.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnetfilter_conntrack.so.3
+	libnetapi.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnetapi.so.1
+	libndr.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libndr.so.3
+	libndr-standard.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libndr-standard.so.0
+	libndr-nbt.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libndr-nbt.so.0
+	libndr-krb5pac.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libndr-krb5pac.so.0
+	libndp.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libndp.so.0
+	libncursesw.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libncursesw.so.6
+	libncurses.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libncurses.so.6
+	libnautilus-extension.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libnautilus-extension.so.4
+	libm17n.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libm17n.so.0
+	libm17n-gui.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libm17n-gui.so.0
+	libm17n-flt.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libm17n-flt.so.0
+	libm17n-core.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libm17n-core.so.0
+	libmvec.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmvec.so.1
+	libmvec.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libmvec.so
+	libmutter-14.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmutter-14.so.0
+	libmtp.so.9 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmtp.so.9
+	libmtdev.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmtdev.so.1
+	libmsgraph-0.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmsgraph-0.so.1
+	libmp3lame.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmp3lame.so.0
+	libmpg123.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmpg123.so.0
+	libmpfr.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmpfr.so.6
+	libmpc.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmpc.so.3
+	libmozjs-115.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmozjs-115.so.0
+	libmount.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmount.so.1
+	libmnl.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmnl.so.0
+	libmm-glib.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmm-glib.so.0
+	libmlx5.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmlx5.so.1
+	libmlx4.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmlx4.so.1
+	libmenuw.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmenuw.so.6
+	libmenu.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmenu.so.6
+	libmemusage.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libmemusage.so
+	libmediaart-2.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmediaart-2.0.so.0
+	libmd.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmd.so.0
+	libmbim-glib.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmbim-glib.so.4
+	libmaxminddb.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmaxminddb.so.0
+	libmarisa.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmarisa.so.0
+	libmanette-0.2.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmanette-0.2.so.0
+	libmana.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmana.so.1
+	libmalcontent-0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmalcontent-0.so.0
+	libmagic.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libmagic.so.1
+	libm.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libm.so.6
+	liblz4.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/liblz4.so.1
+	liblzo2.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/liblzo2.so.2
+	liblzma.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/liblzma.so.5
+	liblua5.4.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/liblua5.4.so.0
+	liblua5.4-c++.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/liblua5.4-c++.so.0
+	libltdl.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libltdl.so.7
+	liblsan.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/liblsan.so.0
+	liblouisutdml.so.9 (libc6,x86-64) => /lib/x86_64-linux-gnu/liblouisutdml.so.9
+	liblouis.so.20 (libc6,x86-64) => /lib/x86_64-linux-gnu/liblouis.so.20
+	liblmdb.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/liblmdb.so.0
+	libldb.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libldb.so.2
+	libldap.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libldap.so.2
+	libldacBT_enc.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libldacBT_enc.so.2
+	libldacBT_abr.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libldacBT_abr.so.2
+	liblc3.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/liblc3.so.1
+	liblcms2.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/liblcms2.so.2
+	liblber.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/liblber.so.2
+	libk5crypto.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libk5crypto.so.3
+	libksba.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libksba.so.8
+	libkrb5support.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libkrb5support.so.0
+	libkrb5.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libkrb5.so.3
+	libkpathsea.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libkpathsea.so.6
+	libkmod.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libkmod.so.2
+	libkeyutils.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libkeyutils.so.1
+	libjson-glib-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjson-glib-1.0.so.0
+	libjson-c.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjson-c.so.5
+	libjq.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjq.so.1
+	libjpeg.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjpeg.so.8
+	libjcat.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjcat.so.1
+	libjbig2dec.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjbig2dec.so.0
+	libjbig.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjbig.so.0
+	libjavascriptcoregtk-6.0.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjavascriptcoregtk-6.0.so.1
+	libjavascriptcoregtk-4.1.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjavascriptcoregtk-4.1.so.0
+	libjansson.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libjansson.so.4
+	libiw.so.30 (libc6,x86-64) => /lib/x86_64-linux-gnu/libiw.so.30
+	libitm.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libitm.so.1
+	libisl.so.23 (libc6,x86-64) => /lib/x86_64-linux-gnu/libisl.so.23
+	libisccfg-9.18.39-0ubuntu0.24.04.3-Ubuntu.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libisccfg-9.18.39-0ubuntu0.24.04.3-Ubuntu.so
+	libisccc-9.18.39-0ubuntu0.24.04.3-Ubuntu.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libisccc-9.18.39-0ubuntu0.24.04.3-Ubuntu.so
+	libisc-9.18.39-0ubuntu0.24.04.3-Ubuntu.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libisc-9.18.39-0ubuntu0.24.04.3-Ubuntu.so
+	libirs-9.18.39-0ubuntu0.24.04.3-Ubuntu.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libirs-9.18.39-0ubuntu0.24.04.3-Ubuntu.so
+	libip6tc.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libip6tc.so.2
+	libip4tc.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libip4tc.so.2
+	libipt.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libipt.so.2
+	libipa_hbac.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libipa_hbac.so.0
+	libinput.so.10 (libc6,x86-64) => /lib/x86_64-linux-gnu/libinput.so.10
+	libinih.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libinih.so.1
+	libini_config.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libini_config.so.5
+	libimobiledevice-1.0.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libimobiledevice-1.0.so.6
+	libimagequant.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libimagequant.so.0
+	libijs-0.35.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libijs-0.35.so
+	libieee1284.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libieee1284.so.3
+	libiec61883.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libiec61883.so.0
+	libidn2.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libidn2.so.0
+	libidn.so.12 (libc6,x86-64) => /lib/x86_64-linux-gnu/libidn.so.12
+	libicuuc.so.74 (libc6,x86-64) => /lib/x86_64-linux-gnu/libicuuc.so.74
+	libicutu.so.74 (libc6,x86-64) => /lib/x86_64-linux-gnu/libicutu.so.74
+	libicutest.so.74 (libc6,x86-64) => /lib/x86_64-linux-gnu/libicutest.so.74
+	libicui18n.so.74 (libc6,x86-64) => /lib/x86_64-linux-gnu/libicui18n.so.74
+	libicuio.so.74 (libc6,x86-64) => /lib/x86_64-linux-gnu/libicuio.so.74
+	libicudata.so.74 (libc6,x86-64) => /lib/x86_64-linux-gnu/libicudata.so.74
+	libicalvcal.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libicalvcal.so.3
+	libicalss_cxx.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libicalss_cxx.so.3
+	libicalss.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libicalss.so.3
+	libical_cxx.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libical_cxx.so.3
+	libical.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libical.so.3
+	libical-glib.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libical-glib.so.3
+	libibverbs.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libibverbs.so.1
+	libibus-1.0.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libibus-1.0.so.5
+	libhyphen.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libhyphen.so.0
+	libhwasan.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libhwasan.so.0
+	libhunspell-1.7.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libhunspell-1.7.so.0
+	libhpmud.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libhpmud.so.0
+	libhpipp.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libhpipp.so.0
+	libhpip.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libhpip.so.0
+	libhpdiscovery.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libhpdiscovery.so.0
+	libhogweed.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libhogweed.so.6
+	libhistory.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libhistory.so.8
+	libheif.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libheif.so.1
+	libharfbuzz.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libharfbuzz.so.0
+	libharfbuzz-icu.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libharfbuzz-icu.so.0
+	libharfbuzz-gobject.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libharfbuzz-gobject.so.0
+	libhandy-1.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libhandy-1.so.0
+	libgxps.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgxps.so.2
+	libgweather-4.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgweather-4.so.0
+	libgusb.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgusb.so.2
+	libgupnp-1.6.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgupnp-1.6.so.0
+	libgupnp-dlna-2.0.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgupnp-dlna-2.0.so.4
+	libgupnp-dlna-gst-2.0.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgupnp-dlna-gst-2.0.so.4
+	libgupnp-av-1.0.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgupnp-av-1.0.so.3
+	libgudev-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgudev-1.0.so.0
+	libgtop-2.0.so.11 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgtop-2.0.so.11
+	libgtksourceview-5.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgtksourceview-5.so.0
+	libgtkmm-4.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgtkmm-4.0.so.0
+	libgtk-4.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgtk-4.so.1
+	libgtk-3.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgtk-3.so.0
+	libgtk-x11-2.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgtk-x11-2.0.so.0
+	libgthread-2.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgthread-2.0.so.0
+	libgstvideo-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgstvideo-1.0.so.0
+	libgsttag-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgsttag-1.0.so.0
+	libgstsdp-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgstsdp-1.0.so.0
+	libgstrtsp-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgstrtsp-1.0.so.0
+	libgstrtp-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgstrtp-1.0.so.0
+	libgstriff-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgstriff-1.0.so.0
+	libgstreamer-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgstreamer-1.0.so.0
+	libgstphotography-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgstphotography-1.0.so.0
+	libgstpbutils-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgstpbutils-1.0.so.0
+	libgstnet-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgstnet-1.0.so.0
+	libgstgl-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgstgl-1.0.so.0
+	libgstfft-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgstfft-1.0.so.0
+	libgstcontroller-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgstcontroller-1.0.so.0
+	libgstcheck-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgstcheck-1.0.so.0
+	libgstbasecamerabinsrc-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgstbasecamerabinsrc-1.0.so.0
+	libgstbase-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgstbase-1.0.so.0
+	libgstaudio-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgstaudio-1.0.so.0
+	libgstapp-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgstapp-1.0.so.0
+	libgstallocators-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgstallocators-1.0.so.0
+	libgssdp-1.6.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgssdp-1.6.so.0
+	libgssapi_krb5.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgssapi_krb5.so.2
+	libgspell-1.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgspell-1.so.2
+	libgsound.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgsound.so.0
+	libgsf-1.so.114 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgsf-1.so.114
+	libgs.so.10 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgs.so.10
+	libgraphite2.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgraphite2.so.3
+	libgraphene-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgraphene-1.0.so.0
+	libgprofng.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgprofng.so.0
+	libgpm.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgpm.so.2
+	libgphoto2_port.so.12 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgphoto2_port.so.12
+	libgphoto2.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgphoto2.so.6
+	libgpgme.so.11 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgpgme.so.11
+	libgpg-error.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgpg-error.so.0
+	libgomp.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgomp.so.1
+	libgobject-2.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgobject-2.0.so.0
+	libgoa-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgoa-1.0.so.0
+	libgoa-backend-1.0.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgoa-backend-1.0.so.2
+	libgnutls.so.30 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgnutls.so.30
+	libgnomekbdui.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgnomekbdui.so.8
+	libgnomekbd.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgnomekbd.so.8
+	libgnome-rr-4.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgnome-rr-4.so.2
+	libgnome-menu-3.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgnome-menu-3.so.0
+	libgnome-desktop-4.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgnome-desktop-4.so.2
+	libgnome-desktop-3.so.20 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgnome-desktop-3.so.20
+	libgnome-bluetooth-3.0.so.13 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgnome-bluetooth-3.0.so.13
+	libgnome-bluetooth-ui-3.0.so.13 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgnome-bluetooth-ui-3.0.so.13
+	libgnome-bg-4.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgnome-bg-4.so.2
+	libgnome-autoar-0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgnome-autoar-0.so.0
+	libgmp.so.10 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgmp.so.10
+	libgmodule-2.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgmodule-2.0.so.0
+	libglibmm_generate_extra_defs-2.68.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libglibmm_generate_extra_defs-2.68.so.1
+	libglibmm-2.68.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libglibmm-2.68.so.1
+	libglib-2.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libglib-2.0.so.0
+	libgjs.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgjs.so.0
+	libgirepository-1.0.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgirepository-1.0.so.1
+	libgiomm-2.68.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgiomm-2.68.so.1
+	libgio-2.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgio-2.0.so.0
+	libgif.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgif.so.7
+	libgexiv2.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgexiv2.so.2
+	libgeocode-glib-2.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgeocode-glib-2.so.0
+	libgeoclue-2.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgeoclue-2.so.0
+	libgee-0.8.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgee-0.8.so.2
+	libgdm.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgdm.so.1
+	libgdk_pixbuf-2.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgdk_pixbuf-2.0.so.0
+	libgdk-3.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgdk-3.so.0
+	libgdk-x11-2.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgdk-x11-2.0.so.0
+	libgdbm_compat.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgdbm_compat.so.4
+	libgdbm.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgdbm.so.6
+	libgdata.so.22 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgdata.so.22
+	libgd.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgd.so.3
+	libgcrypt.so.20 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgcrypt.so.20
+	libgcr-4.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgcr-4.so.4
+	libgcr-ui-3.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgcr-ui-3.so.1
+	libgcr-base-3.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgcr-base-3.so.1
+	libgck-2.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgck-2.so.2
+	libgck-1.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgck-1.so.0
+	libgcc_s.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgcc_s.so.1
+	libgbm.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgbm.so.1
+	libgamemodeauto.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgamemodeauto.so.0
+	libgamemode.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgamemode.so.0
+	libgamemode.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libgamemode.so
+	libgallium-25.2.8-0ubuntu0.24.04.1.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libgallium-25.2.8-0ubuntu0.24.04.1.so
+	libgailutil.so.18 (libc6,x86-64) => /lib/x86_64-linux-gnu/libgailutil.so.18
+	libfwupd.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfwupd.so.2
+	libfuse3.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfuse3.so.3
+	libftdi1.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libftdi1.so.2
+	libfribidi.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfribidi.so.0
+	libfreetype.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfreetype.so.6
+	libfreerdp3.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfreerdp3.so.3
+	libfreerdp-server3.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfreerdp-server3.so.3
+	libfreebl3.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libfreebl3.so
+	libfreeblpriv3.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libfreeblpriv3.so
+	libfreeaptx.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfreeaptx.so.0
+	libfprint-2.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfprint-2.so.2
+	libfprint-2-tod.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfprint-2-tod.so.1
+	libformw.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libformw.so.6
+	libform.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libform.so.6
+	libfontenc.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfontenc.so.1
+	libfontconfig.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfontconfig.so.1
+	libflashrom.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libflashrom.so.1
+	libfido2.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfido2.so.1
+	libfftw3f_threads.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfftw3f_threads.so.3
+	libfftw3f_omp.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfftw3f_omp.so.3
+	libfftw3f.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfftw3f.so.3
+	libffi.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libffi.so.8
+	libfdisk.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfdisk.so.1
+	libfastjson.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libfastjson.so.4
+	libfakeroot-0.so (libc6,x86-64) => /usr/lib/x86_64-linux-gnu/libfakeroot/libfakeroot-0.so
+	libe2p.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libe2p.so.2
+	libext2fs.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libext2fs.so.2
+	libexslt.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libexslt.so.0
+	libexpatw.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libexpatw.so.1
+	libexpat.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libexpat.so.1
+	libexiv2.so.27 (libc6,x86-64) => /lib/x86_64-linux-gnu/libexiv2.so.27
+	libexif.so.12 (libc6,x86-64) => /lib/x86_64-linux-gnu/libexif.so.12
+	libexempi.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libexempi.so.8
+	libevview3.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libevview3.so.3
+	libevent_core-2.1.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libevent_core-2.1.so.7
+	libevdocument3.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libevdocument3.so.4
+	libevdev.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libevdev.so.2
+	libestr.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libestr.so.0
+	libespeak-ng.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libespeak-ng.so.1
+	libepoxy.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libepoxy.so.0
+	libenchant-2.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libenchant-2.so.2
+	libelf.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libelf.so.1
+	libeis.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libeis.so.1
+	libei.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libei.so.1
+	libefivar.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libefivar.so.1
+	libefiboot.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libefiboot.so.1
+	libefa.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libefa.so.1
+	libeditorconfig.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libeditorconfig.so.0
+	libedit.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libedit.so.2
+	libedataserverui-1.2.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libedataserverui-1.2.so.4
+	libedataserver-1.2.so.27 (libc6,x86-64) => /lib/x86_64-linux-gnu/libedataserver-1.2.so.27
+	libedata-cal-2.0.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libedata-cal-2.0.so.2
+	libedata-book-1.2.so.27 (libc6,x86-64) => /lib/x86_64-linux-gnu/libedata-book-1.2.so.27
+	libecal-2.0.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libecal-2.0.so.3
+	libebook-1.2.so.21 (libc6,x86-64) => /lib/x86_64-linux-gnu/libebook-1.2.so.21
+	libebook-contacts-1.2.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libebook-contacts-1.2.so.4
+	libebackend-1.2.so.11 (libc6,x86-64) => /lib/x86_64-linux-gnu/libebackend-1.2.so.11
+	libeatmydata.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libeatmydata.so.1
+	libeatmydata.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libeatmydata.so
+	libdw.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdw.so.1
+	libdv.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdv.so.4
+	libduktape.so.207 (libc6,x86-64) => /lib/x86_64-linux-gnu/libduktape.so.207
+	libdrop_ambient.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdrop_ambient.so.0
+	libdrm_radeon.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdrm_radeon.so.1
+	libdrm_nouveau.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdrm_nouveau.so.2
+	libdrm_intel.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdrm_intel.so.1
+	libdrm_amdgpu.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdrm_amdgpu.so.1
+	libdrm.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdrm.so.2
+	libdotconf.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdotconf.so.0
+	libdns-9.18.39-0ubuntu0.24.04.3-Ubuntu.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libdns-9.18.39-0ubuntu0.24.04.3-Ubuntu.so
+	libdl.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdl.so.2
+	libdjvulibre.so.21 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdjvulibre.so.21
+	libdhash.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdhash.so.1
+	libde265.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libde265.so.0
+	libdevmapper.so.1.02.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdevmapper.so.1.02.1
+	libdeflate.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdeflate.so.0
+	libdee-1.0.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdee-1.0.so.4
+	libdecor-0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdecor-0.so.0
+	libdebuginfod.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdebuginfod.so.1
+	libdebconfclient.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdebconfclient.so.0
+	libdconf.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdconf.so.1
+	libdcerpc.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdcerpc.so.0
+	libdcerpc-server.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdcerpc-server.so.0
+	libdcerpc-server-core.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdcerpc-server-core.so.0
+	libdcerpc-samr.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdcerpc-samr.so.0
+	libdcerpc-binding.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdcerpc-binding.so.0
+	libdbusmenu-gtk3.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdbusmenu-gtk3.so.4
+	libdbusmenu-glib.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdbusmenu-glib.so.4
+	libdbus-1.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdbus-1.so.3
+	libdbus-glib-1.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdbus-glib-1.so.2
+	libdb-5.3.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libdb-5.3.so
+	libdatrie.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdatrie.so.1
+	libdaemon.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libdaemon.so.0
+	libcurl.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcurl.so.4
+	libcurl-gnutls.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcurl-gnutls.so.4
+	libcupsimage.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcupsimage.so.2
+	libcupsfilters.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcupsfilters.so.2
+	libcups.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcups.so.2
+	libcue.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcue.so.2
+	libctf.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libctf.so.0
+	libctf-nobfd.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libctf-nobfd.so.0
+	libcryptsetup.so.12 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcryptsetup.so.12
+	libcrypto.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcrypto.so.3
+	libcrypt.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcrypt.so.1
+	libcrypt.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libcrypt.so
+	libcrack.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcrack.so.2
+	libcom_err.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcom_err.so.2
+	libcolorhug.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcolorhug.so.2
+	libcolordprivate.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcolordprivate.so.2
+	libcolord.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcolord.so.2
+	libcolord-gtk4.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcolord-gtk4.so.1
+	libcollection.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcollection.so.4
+	libclang-18.so.18 (libc6,x86-64) => /lib/x86_64-linux-gnu/libclang-18.so.18
+	libclang-cpp.so.18.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libclang-cpp.so.18.1
+	libchewing.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libchewing.so.3
+	libcdio_paranoia.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcdio_paranoia.so.2
+	libcdio_cdda.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcdio_cdda.so.2
+	libcdio.so.19 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcdio.so.19
+	libcdda_paranoia.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcdda_paranoia.so.0
+	libcdda_interface.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcdda_interface.so.0
+	libcc1.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcc1.so.0
+	libcbor.so.0.10 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcbor.so.0.10
+	libcares.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcares.so.2
+	libcap.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcap.so.2
+	libcap-ng.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcap-ng.so.0
+	libcanberra.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcanberra.so.0
+	libcanberra-gtk3.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcanberra-gtk3.so.0
+	libcamel-1.2.so.64 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcamel-1.2.so.64
+	libcairomm-1.16.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcairomm-1.16.so.1
+	libcairo.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcairo.so.2
+	libcairo-script-interpreter.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcairo-script-interpreter.so.2
+	libcairo-gobject.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcairo-gobject.so.2
+	libcaca.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcaca.so.0
+	libcaca++.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libcaca++.so.0
+	libc_malloc_debug.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libc_malloc_debug.so.0
+	libc_malloc_debug.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libc_malloc_debug.so
+	libc.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libc.so.6
+	libbz2.so.1.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbz2.so.1.0
+	libbytesize.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbytesize.so.1
+	libbsd.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbsd.so.0
+	libbrotlienc.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbrotlienc.so.1
+	libbrotlidec.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbrotlidec.so.1
+	libbrotlicommon.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbrotlicommon.so.1
+	libbrlapi.so.0.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbrlapi.so.0.8
+	libbpf.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbpf.so.1
+	libbluetooth.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbluetooth.so.3
+	libblockdev.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libblockdev.so.3
+	libblkid.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libblkid.so.1
+	libbind9-9.18.39-0ubuntu0.24.04.3-Ubuntu.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libbind9-9.18.39-0ubuntu0.24.04.3-Ubuntu.so
+	libbfd-2.42-system.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libbfd-2.42-system.so
+	libbd_utils.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbd_utils.so.3
+	libbd_swap.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbd_swap.so.3
+	libbd_part.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbd_part.so.3
+	libbd_nvme.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbd_nvme.so.3
+	libbd_mdraid.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbd_mdraid.so.3
+	libbd_loop.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbd_loop.so.3
+	libbd_fs.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbd_fs.so.3
+	libbd_crypto.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbd_crypto.so.3
+	libbcc_bpf.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbcc_bpf.so.0
+	libbcc.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbcc.so.0
+	libbasicobjects.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbasicobjects.so.0
+	libbabeltrace.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbabeltrace.so.1
+	libbabeltrace-lttng-live.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbabeltrace-lttng-live.so.1
+	libbabeltrace-dummy.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbabeltrace-dummy.so.1
+	libbabeltrace-ctf.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbabeltrace-ctf.so.1
+	libbabeltrace-ctf-text.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbabeltrace-ctf-text.so.1
+	libbabeltrace-ctf-metadata.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libbabeltrace-ctf-metadata.so.1
+	libayatana-indicator3.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libayatana-indicator3.so.7
+	libayatana-ido3-0.4.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libayatana-ido3-0.4.so.0
+	libayatana-appindicator3.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libayatana-appindicator3.so.1
+	libavc1394.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libavc1394.so.0
+	libavahi-glib.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libavahi-glib.so.1
+	libavahi-core.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libavahi-core.so.7
+	libavahi-common.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libavahi-common.so.3
+	libavahi-client.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libavahi-client.so.3
+	libaudit.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libaudit.so.1
+	libattr.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libattr.so.1
+	libatspi.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libatspi.so.0
+	libatopology.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libatopology.so.2
+	libatomic.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libatomic.so.1
+	libatm.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libatm.so.1
+	libatk-1.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libatk-1.0.so.0
+	libatk-bridge-2.0.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libatk-bridge-2.0.so.0
+	libatasmart.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libatasmart.so.4
+	libasyncns.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libasyncns.so.0
+	libassuan.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libassuan.so.0
+	libaspell.so.15 (libc6,x86-64) => /lib/x86_64-linux-gnu/libaspell.so.15
+	libasound.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libasound.so.2
+	libasan.so.8 (libc6,x86-64) => /lib/x86_64-linux-gnu/libasan.so.8
+	libargon2.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libargon2.so.1
+	libarchive.so.13 (libc6,x86-64) => /lib/x86_64-linux-gnu/libarchive.so.13
+	libapt-private.so.0.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libapt-private.so.0.0
+	libapt-pkg.so.6.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libapt-pkg.so.6.0
+	libappstream.so.5 (libc6,x86-64) => /lib/x86_64-linux-gnu/libappstream.so.5
+	libapparmor.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libapparmor.so.1
+	libaom.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libaom.so.3
+	libao.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libao.so.4
+	libanl.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libanl.so.1
+	libanl.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libanl.so
+	libadwaita-1.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libadwaita-1.so.0
+	libacl.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libacl.so.1
+	libaccountsservice.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libaccountsservice.so.0
+	libabsl_time_zone.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_time_zone.so.20220623
+	libabsl_time.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_time.so.20220623
+	libabsl_throw_delegate.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_throw_delegate.so.20220623
+	libabsl_synchronization.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_synchronization.so.20220623
+	libabsl_symbolize.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_symbolize.so.20220623
+	libabsl_strings_internal.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_strings_internal.so.20220623
+	libabsl_strings.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_strings.so.20220623
+	libabsl_strerror.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_strerror.so.20220623
+	libabsl_str_format_internal.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_str_format_internal.so.20220623
+	libabsl_statusor.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_statusor.so.20220623
+	libabsl_status.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_status.so.20220623
+	libabsl_stacktrace.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_stacktrace.so.20220623
+	libabsl_spinlock_wait.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_spinlock_wait.so.20220623
+	libabsl_scoped_set_env.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_scoped_set_env.so.20220623
+	libabsl_raw_logging_internal.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_raw_logging_internal.so.20220623
+	libabsl_raw_hash_set.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_raw_hash_set.so.20220623
+	libabsl_random_seed_sequences.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_random_seed_sequences.so.20220623
+	libabsl_random_seed_gen_exception.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_random_seed_gen_exception.so.20220623
+	libabsl_random_internal_seed_material.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_random_internal_seed_material.so.20220623
+	libabsl_random_internal_randen_slow.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_random_internal_randen_slow.so.20220623
+	libabsl_random_internal_randen_hwaes_impl.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_random_internal_randen_hwaes_impl.so.20220623
+	libabsl_random_internal_randen_hwaes.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_random_internal_randen_hwaes.so.20220623
+	libabsl_random_internal_randen.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_random_internal_randen.so.20220623
+	libabsl_random_internal_pool_urbg.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_random_internal_pool_urbg.so.20220623
+	libabsl_random_internal_platform.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_random_internal_platform.so.20220623
+	libabsl_random_internal_distribution_test_util.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_random_internal_distribution_test_util.so.20220623
+	libabsl_random_distributions.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_random_distributions.so.20220623
+	libabsl_periodic_sampler.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_periodic_sampler.so.20220623
+	libabsl_malloc_internal.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_malloc_internal.so.20220623
+	libabsl_low_level_hash.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_low_level_hash.so.20220623
+	libabsl_log_severity.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_log_severity.so.20220623
+	libabsl_leak_check.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_leak_check.so.20220623
+	libabsl_int128.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_int128.so.20220623
+	libabsl_hashtablez_sampler.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_hashtablez_sampler.so.20220623
+	libabsl_hash.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_hash.so.20220623
+	libabsl_graphcycles_internal.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_graphcycles_internal.so.20220623
+	libabsl_flags_usage_internal.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_flags_usage_internal.so.20220623
+	libabsl_flags_usage.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_flags_usage.so.20220623
+	libabsl_flags_reflection.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_flags_reflection.so.20220623
+	libabsl_flags_program_name.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_flags_program_name.so.20220623
+	libabsl_flags_private_handle_accessor.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_flags_private_handle_accessor.so.20220623
+	libabsl_flags_parse.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_flags_parse.so.20220623
+	libabsl_flags_marshalling.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_flags_marshalling.so.20220623
+	libabsl_flags_internal.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_flags_internal.so.20220623
+	libabsl_flags_config.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_flags_config.so.20220623
+	libabsl_flags_commandlineflag_internal.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_flags_commandlineflag_internal.so.20220623
+	libabsl_flags_commandlineflag.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_flags_commandlineflag.so.20220623
+	libabsl_failure_signal_handler.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_failure_signal_handler.so.20220623
+	libabsl_exponential_biased.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_exponential_biased.so.20220623
+	libabsl_examine_stack.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_examine_stack.so.20220623
+	libabsl_demangle_internal.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_demangle_internal.so.20220623
+	libabsl_debugging_internal.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_debugging_internal.so.20220623
+	libabsl_cordz_sample_token.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_cordz_sample_token.so.20220623
+	libabsl_cordz_info.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_cordz_info.so.20220623
+	libabsl_cordz_handle.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_cordz_handle.so.20220623
+	libabsl_cordz_functions.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_cordz_functions.so.20220623
+	libabsl_cord_internal.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_cord_internal.so.20220623
+	libabsl_cord.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_cord.so.20220623
+	libabsl_civil_time.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_civil_time.so.20220623
+	libabsl_city.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_city.so.20220623
+	libabsl_base.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_base.so.20220623
+	libabsl_bad_variant_access.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_bad_variant_access.so.20220623
+	libabsl_bad_optional_access.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_bad_optional_access.so.20220623
+	libabsl_bad_any_cast_impl.so.20220623 (libc6,x86-64) => /lib/x86_64-linux-gnu/libabsl_bad_any_cast_impl.so.20220623
+	libaa.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libaa.so.1
+	libX11.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libX11.so.6
+	libX11-xcb.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libX11-xcb.so.1
+	libXxf86vm.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXxf86vm.so.1
+	libXxf86dga.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXxf86dga.so.1
+	libXvMCW.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXvMCW.so.1
+	libXvMC.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXvMC.so.1
+	libXv.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXv.so.1
+	libXtst.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXtst.so.6
+	libXt.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXt.so.6
+	libXss.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXss.so.1
+	libXrender.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXrender.so.1
+	libXrandr.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXrandr.so.2
+	libXpm.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXpm.so.4
+	libXmuu.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXmuu.so.1
+	libXmu.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXmu.so.6
+	libXinerama.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXinerama.so.1
+	libXi.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXi.so.6
+	libXft.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXft.so.2
+	libXfont2.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXfont2.so.2
+	libXfixes.so.3 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXfixes.so.3
+	libXext.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXext.so.6
+	libXdmcp.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXdmcp.so.6
+	libXdamage.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXdamage.so.1
+	libXcursor.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXcursor.so.1
+	libXcomposite.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXcomposite.so.1
+	libXaw.so.7 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXaw.so.7
+	libXau.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXau.so.6
+	libXRes.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libXRes.so.1
+	libVkLayer_MESA_overlay.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libVkLayer_MESA_overlay.so
+	libVkLayer_MESA_device_select.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libVkLayer_MESA_device_select.so
+	libVkLayer_INTEL_nullhw.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libVkLayer_INTEL_nullhw.so
+	libSM.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libSM.so.6
+	libOpenGL.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libOpenGL.so.0
+	libLerc.so.4 (libc6,x86-64) => /lib/x86_64-linux-gnu/libLerc.so.4
+	libLLVM.so.20.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libLLVM.so.20.1
+	libLLVM.so.18.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libLLVM.so.18.1
+	libI810XvMC.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libI810XvMC.so.1
+	libIntelXvMC.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libIntelXvMC.so.1
+	libICE.so.6 (libc6,x86-64) => /lib/x86_64-linux-gnu/libICE.so.6
+	libGLdispatch.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libGLdispatch.so.0
+	libGLX_mesa.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libGLX_mesa.so.0
+	libGLX.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libGLX.so.0
+	libGLU.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libGLU.so.1
+	libGLESv2.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/libGLESv2.so.2
+	libGL.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libGL.so.1
+	libFLAC.so.12 (libc6,x86-64) => /lib/x86_64-linux-gnu/libFLAC.so.12
+	libEGL_mesa.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libEGL_mesa.so.0
+	libEGL.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libEGL.so.1
+	libBrokenLocale.so.1 (libc6,x86-64) => /lib/x86_64-linux-gnu/libBrokenLocale.so.1
+	libBrokenLocale.so (libc6,x86-64) => /lib/x86_64-linux-gnu/libBrokenLocale.so
+	ld-linux-x86-64.so.2 (libc6,x86-64) => /lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+
+--- Shared library cache: searching for 'libpthread' ---
+	libpthread.so.0 (libc6,x86-64) => /lib/x86_64-linux-gnu/libpthread.so.0
+
+--- Total number of cached shared libraries ---
+869
+
+--- Dynamic linker config (/etc/ld.so.conf) ---
+include /etc/ld.so.conf.d/*.conf
+
+
+--- Include files in /etc/ld.so.conf.d/ ---
+fakeroot-x86_64-linux-gnu.conf
+libc.conf
+x86_64-linux-gnu.conf
+/usr/lib/x86_64-linux-gnu/libfakeroot
+# libc default configuration
+/usr/local/lib
+# Multiarch support
+/usr/local/lib/x86_64-linux-gnu
+/lib/x86_64-linux-gnu
+/usr/lib/x86_64-linux-gnu
+
+--- Checking if /bin/ls is dynamically linked ---
+/bin/ls: ELF 64-bit LSB pie executable, x86-64, version 1 (SYSV), dynamically linked, interpreter /lib64/ld-linux-x86-64.so.2, BuildID[sha1]=05dad2c279f7651722809fa75adba6bf9ab1c209, for GNU/Linux 3.2.0, stripped
+
+--- ELF header of /bin/ls ---
+ELF Header:
+  Magic:   7f 45 4c 46 02 01 01 00 00 00 00 00 00 00 00 00 
+  Class:                             ELF64
+  Data:                              2's complement, little endian
+  Version:                           1 (current)
+  OS/ABI:                            UNIX - System V
+  ABI Version:                       0
+  Type:                              DYN (Position-Independent Executable file)
+  Machine:                           Advanced Micro Devices X86-64
+  Version:                           0x1
+  Entry point address:               0x6d30
+  Start of program headers:          64 (bytes into file)
+  Start of section headers:          140328 (bytes into file)
+  Flags:                             0x0
+  Size of this header:               64 (bytes)
+  Size of program headers:           56 (bytes)
+  Number of program headers:         13
+  Size of section headers:           64 (bytes)
+  Number of section headers:         31
+  Section header string table index: 30
+
+--- Shared libraries loaded by current shell (from /proc) ---
+/usr/lib/x86_64-linux-gnu/ld-linux-x86-64.so.2
+/usr/lib/x86_64-linux-gnu/libc.so.6
+/usr/lib/x86_64-linux-gnu/libtinfo.so.6.4
+--- Challenge Shared Objects ---
+4a: libraries used by ssh or curl ---
+	linux-vdso.so.1 (0x000079a8934dd000)
+	libselinux.so.1 => /lib/x86_64-linux-gnu/libselinux.so.1 (0x000079a8933c8000)
+	libgssapi_krb5.so.2 => /lib/x86_64-linux-gnu/libgssapi_krb5.so.2 (0x000079a893374000)
+	libcrypto.so.3 => /lib/x86_64-linux-gnu/libcrypto.so.3 (0x000079a892e00000)
+	libz.so.1 => /lib/x86_64-linux-gnu/libz.so.1 (0x000079a893358000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x000079a892a00000)
+	libpcre2-8.so.0 => /lib/x86_64-linux-gnu/libpcre2-8.so.0 (0x000079a892d66000)
+	/lib64/ld-linux-x86-64.so.2 (0x000079a8934df000)
+	libkrb5.so.3 => /lib/x86_64-linux-gnu/libkrb5.so.3 (0x000079a892c9d000)
+	libk5crypto.so.3 => /lib/x86_64-linux-gnu/libk5crypto.so.3 (0x000079a89332a000)
+	libcom_err.so.2 => /lib/x86_64-linux-gnu/libcom_err.so.2 (0x000079a893324000)
+	libkrb5support.so.0 => /lib/x86_64-linux-gnu/libkrb5support.so.0 (0x000079a893317000)
+	libkeyutils.so.1 => /lib/x86_64-linux-gnu/libkeyutils.so.1 (0x000079a892c96000)
+	libresolv.so.2 => /lib/x86_64-linux-gnu/libresolv.so.2 (0x000079a892c83000)
+4b: libm files ---
+/lib/x86_64-linux-gnu/libm17n-core.so.0
+/lib/x86_64-linux-gnu/libm17n-core.so.0.4.2
+/lib/x86_64-linux-gnu/libm17n-flt.so.0
+/lib/x86_64-linux-gnu/libm17n-flt.so.0.4.2
+/lib/x86_64-linux-gnu/libm17n-gui.so.0
+/lib/x86_64-linux-gnu/libm17n-gui.so.0.4.2
+/lib/x86_64-linux-gnu/libm17n.so.0
+/lib/x86_64-linux-gnu/libm17n.so.0.4.2
+/lib/x86_64-linux-gnu/libm-2.39.a
+/lib/x86_64-linux-gnu/libm.a
+/lib/x86_64-linux-gnu/libmagic.so.1
+/lib/x86_64-linux-gnu/libmagic.so.1.0.0
+/lib/x86_64-linux-gnu/libmalcontent-0.so.0
+/lib/x86_64-linux-gnu/libmalcontent-0.so.0.11.1
+/lib/x86_64-linux-gnu/libmana.so.1
+/lib/x86_64-linux-gnu/libmana.so.1.0.50.0
+/lib/x86_64-linux-gnu/libmanette-0.2.so.0
+/lib/x86_64-linux-gnu/libmarisa.so.0
+/lib/x86_64-linux-gnu/libmarisa.so.0.0.0
+/lib/x86_64-linux-gnu/libmaxminddb.so.0
+/lib/x86_64-linux-gnu/libmaxminddb.so.0.0.7
+/lib/x86_64-linux-gnu/libmbim-glib.so.4
+/lib/x86_64-linux-gnu/libmbim-glib.so.4.8.0
+/lib/x86_64-linux-gnu/libmcheck.a
+/lib/x86_64-linux-gnu/libmd.so.0
+/lib/x86_64-linux-gnu/libmd.so.0.1.0
+/lib/x86_64-linux-gnu/libmediaart-2.0.so.0
+/lib/x86_64-linux-gnu/libmediaart-2.0.so.0.906.0
+/lib/x86_64-linux-gnu/libmemusage.so
+/lib/x86_64-linux-gnu/libmenu.so.6
+/lib/x86_64-linux-gnu/libmenu.so.6.4
+/lib/x86_64-linux-gnu/libmenuw.so.6
+/lib/x86_64-linux-gnu/libmenuw.so.6.4
+/lib/x86_64-linux-gnu/libmlx4.so.1
+/lib/x86_64-linux-gnu/libmlx4.so.1.0.50.0
+/lib/x86_64-linux-gnu/libmlx5.so.1
+/lib/x86_64-linux-gnu/libmlx5.so.1.24.50.0
+/lib/x86_64-linux-gnu/libmm-glib.so.0
+/lib/x86_64-linux-gnu/libmm-glib.so.0.10.0
+/lib/x86_64-linux-gnu/libmnl.so.0
+/lib/x86_64-linux-gnu/libmnl.so.0.2.0
+/lib/x86_64-linux-gnu/libmount.so.1
+/lib/x86_64-linux-gnu/libmount.so.1.1.0
+/lib/x86_64-linux-gnu/libmozjs-115.so.0
+/lib/x86_64-linux-gnu/libmozjs-115.so.115.10.0
+/lib/x86_64-linux-gnu/libmp3lame.so.0
+/lib/x86_64-linux-gnu/libmp3lame.so.0.0.0
+/lib/x86_64-linux-gnu/libmpc.so.3
+/lib/x86_64-linux-gnu/libmpc.so.3.3.1
+/lib/x86_64-linux-gnu/libmpfr.so.6
+/lib/x86_64-linux-gnu/libmpfr.so.6.2.1
+/lib/x86_64-linux-gnu/libmpg123.so.0
+/lib/x86_64-linux-gnu/libmpg123.so.0.48.2
+/lib/x86_64-linux-gnu/libmsgraph-0.so.0.2.1
+/lib/x86_64-linux-gnu/libmsgraph-0.so.1
+/lib/x86_64-linux-gnu/libm.so
+/lib/x86_64-linux-gnu/libm.so.6
+/lib/x86_64-linux-gnu/libmtdev.so.1
+/lib/x86_64-linux-gnu/libmtdev.so.1.0.0
+/lib/x86_64-linux-gnu/libmtp.so.9
+/lib/x86_64-linux-gnu/libmtp.so.9.4.0
+/lib/x86_64-linux-gnu/libmutter-14.so.0
+/lib/x86_64-linux-gnu/libmutter-14.so.0.0.0
+/lib/x86_64-linux-gnu/libmvec.a
+/lib/x86_64-linux-gnu/libmvec.so
+/lib/x86_64-linux-gnu/libmvec.so.1
+4c: follow libc.so.6 symlink ---
+/usr/lib/x86_64-linux-gnu/libc.so.6
+4d: compile and inspect test program ---
+	linux-vdso.so.1 (0x00007a7c51108000)
+	libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007a7c50e00000)
+	/lib64/ld-linux-x86-64.so.2 (0x00007a7c5110a000)
